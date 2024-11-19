@@ -1,0 +1,4 @@
+packages:
+  - "clients/ts-fetch"
+  - "docs/swagger-ui"
+  - "docs/rapidoc"

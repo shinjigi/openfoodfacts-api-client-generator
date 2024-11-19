@@ -179,12 +179,9 @@ export class ResponseContext {
             return result;
         }
 
-        const parameters = this.headers[headerName]!.split(";");
+        const parameters = this.headers[headerName].split(";");
         for (const parameter of parameters) {
             let [key, value] = parameter.split("=", 2);
-            if (!key) {
-                continue;
-            }
             key = key.toLowerCase().trim();
             if (value === undefined) {
                 result[""] = key;
@@ -249,9 +246,9 @@ export function wrapHttpLibrary(promiseHttpLibrary: PromiseHttpLibrary): HttpLib
 
 export class HttpInfo<T> extends ResponseContext {
     public constructor(
-        httpStatusCode: number,
-        headers: Headers,
-        body: ResponseBody,
+        public httpStatusCode: number,
+        public headers: Headers,
+        public body: ResponseBody,
         public data: T,
     ) {
         super(httpStatusCode, headers, body);

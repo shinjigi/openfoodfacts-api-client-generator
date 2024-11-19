@@ -4,7 +4,7 @@ extends:
 
 apis:
   off@v2:
-    root: ../../api-external/openfoodfacts/ref/api.yml
+    root: docs/swagger-ui/src/api-ref/api.yml
     x-openapi-ts:
       output: ./docs/redocly/openapi-v2.ts
     rules:
@@ -15,7 +15,7 @@ apis:
       #security-defined: off
       no-server-example.com: off
   # off@v3:
-  #   root: ../../api-external/openfoodfacts/ref/api-v3.yml
+  #   root: docs/swagger-ui/src/api-ref/api-v3.yml
   #   x-openapi-ts:
   #     output: ./docs/redocly/openapi-v3.ts
   #   rules:

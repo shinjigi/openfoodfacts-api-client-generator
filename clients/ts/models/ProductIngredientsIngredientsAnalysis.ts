@@ -13,6 +13,8 @@
 import { HttpFile } from '../http/http';
 
 export class ProductIngredientsIngredientsAnalysis {
+    'ennon_vegan'?: Array<string>;
+    'enpalm_oil_content_unknown'?: Array<string>;
     'enpalm_oil'?: Array<string>;
     'envegan_status_unknown'?: Array<string>;
     'envegetarian_status_unknown'?: Array<string>;
@@ -24,6 +26,18 @@ export class ProductIngredientsIngredientsAnalysis {
     static readonly mapping: {[index: string]: string} | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
+        {
+            "name": "ennon_vegan",
+            "baseName": "en:non-vegan",
+            "type": "Array<string>",
+            "format": ""
+        },
+        {
+            "name": "enpalm_oil_content_unknown",
+            "baseName": "en:palm-oil-content-unknown",
+            "type": "Array<string>",
+            "format": ""
+        },
         {
             "name": "enpalm_oil",
             "baseName": "en:palm-oil",

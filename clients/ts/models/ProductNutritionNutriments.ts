@@ -115,6 +115,7 @@ export class ProductNutritionNutriments {
     'sodium'?: number;
     'sugars'?: number;
     'fiber'?: number;
+    'carbon_footprint_from_known_ingredients_100g'?: number;
     'carbon_footprint_from_known_ingredients_product'?: number;
     'carbon_footprint_from_known_ingredients_serving'?: number;
     /**
@@ -578,6 +579,12 @@ export class ProductNutritionNutriments {
             "format": ""
         },
         {
+            "name": "carbon_footprint_from_known_ingredients_100g",
+            "baseName": "carbon-footprint-from-known-ingredients_100g",
+            "type": "number",
+            "format": "float"
+        },
+        {
             "name": "carbon_footprint_from_known_ingredients_product",
             "baseName": "carbon-footprint-from-known-ingredients_product",
             "type": "number",
@@ -587,7 +594,7 @@ export class ProductNutritionNutriments {
             "name": "carbon_footprint_from_known_ingredients_serving",
             "baseName": "carbon-footprint-from-known-ingredients_serving",
             "type": "number",
-            "format": ""
+            "format": "float"
         },
         {
             "name": "erythritol",

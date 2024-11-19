@@ -1,7 +1,7 @@
 generatorName: javascript
 outputDir: ./clients/js
-#inputSpec: ../../api-external/openfoodfacts/ref/api-short.yml
-inputSpec: ../../api-external/openfoodfacts/ref/api.yml
+#inputSpec: docs/swagger-ui/src/api-ref/api-short.yml
+inputSpec: docs/swagger-ui/src/api-ref/api.yml
 verbose: false
 #templateDir: ./clients/js/custom-templates
 gitHost: "EuroconsumersIT@dev.azure.com"

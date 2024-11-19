@@ -162,6 +162,130 @@ export class PromiseAuxiliaryOperationsApi {
         return result.toPromise();
     }
 
+    /**
+     * Search products with filters (GET)
+     * Search products with filters (GET)
+     * @param [search_terms] Text search terms
+     * @param [page]
+     * @param [page_size]
+     * @param [json]
+     * @param [fields]
+     * @param [sort_by]
+     * @param [states_tags]
+     * @param [brands_tags]
+     * @param [categories_tags]
+     * @param [labels_tags]
+     * @param [packaging_tags]
+     * @param [purchase_places_tags]
+     * @param [stores_tags]
+     * @param [countries_tags]
+     * @param [ingredients_tags]
+     * @param [trace_tags]
+     */
+    public searchV1ProductsGetWithHttpInfo(search_terms?: string, page?: number, page_size?: number, json?: 1, fields?: string, sort_by?: 'popularity' | 'product_name' | 'created_t' | 'created_datetime' | 'completed_t' | 'last_modified_t' | 'last_modified_datetime' | 'unique_scans_n' | 'score', states_tags?: string, brands_tags?: string, categories_tags?: string, labels_tags?: string, packaging_tags?: string, purchase_places_tags?: string, stores_tags?: string, countries_tags?: string, ingredients_tags?: string, trace_tags?: string, _options?: Configuration): Promise<HttpInfo<SearchForProductsResponse>> {
+        const result = this.api.searchV1ProductsGetWithHttpInfo(search_terms, page, page_size, json, fields, sort_by, states_tags, brands_tags, categories_tags, labels_tags, packaging_tags, purchase_places_tags, stores_tags, countries_tags, ingredients_tags, trace_tags, _options);
+        return result.toPromise();
+    }
+
+    /**
+     * Search products with filters (GET)
+     * Search products with filters (GET)
+     * @param [search_terms] Text search terms
+     * @param [page]
+     * @param [page_size]
+     * @param [json]
+     * @param [fields]
+     * @param [sort_by]
+     * @param [states_tags]
+     * @param [brands_tags]
+     * @param [categories_tags]
+     * @param [labels_tags]
+     * @param [packaging_tags]
+     * @param [purchase_places_tags]
+     * @param [stores_tags]
+     * @param [countries_tags]
+     * @param [ingredients_tags]
+     * @param [trace_tags]
+     */
+    public searchV1ProductsGet(search_terms?: string, page?: number, page_size?: number, json?: 1, fields?: string, sort_by?: 'popularity' | 'product_name' | 'created_t' | 'created_datetime' | 'completed_t' | 'last_modified_t' | 'last_modified_datetime' | 'unique_scans_n' | 'score', states_tags?: string, brands_tags?: string, categories_tags?: string, labels_tags?: string, packaging_tags?: string, purchase_places_tags?: string, stores_tags?: string, countries_tags?: string, ingredients_tags?: string, trace_tags?: string, _options?: Configuration): Promise<SearchForProductsResponse> {
+        const result = this.api.searchV1ProductsGet(search_terms, page, page_size, json, fields, sort_by, states_tags, brands_tags, categories_tags, labels_tags, packaging_tags, purchase_places_tags, stores_tags, countries_tags, ingredients_tags, trace_tags, _options);
+        return result.toPromise();
+    }
+
+    /**
+     * Search products with filters (POST)
+     * Search products with filters (POST)
+     * @param action
+     * @param sort_by
+     * @param page_size
+     * @param [search_simple]
+     * @param [search_terms2] Search for words present in the product name, generic name, brands, categories, origins and labels
+     * @param [tagtype_0] First criteria type
+     * @param [tag_contains_0] First criteria condition
+     * @param [tag_0] First criteria value
+     * @param [tagtype_1] First criteria type
+     * @param [tag_contains_1] Second criteria condition
+     * @param [tag_1] Second criteria value
+     * @param [additives] Filter by presence of additives
+     * @param [ingredients_from_palm_oil] Filter by ingredients from palm oil
+     * @param [ingredients_that_may_be_from_palm_oil] Filter by ingredients that may be from palm oil
+     * @param [ingredients_from_or_that_may_be_from_palm_oil] Filter by ingredients from or that may be from palm oil
+     * @param [nutriment_0]
+     * @param [nutriment_compare_0]
+     * @param [nutriment_value_0]
+     * @param [nutriment_1]
+     * @param [nutriment_compare_1]
+     * @param [nutriment_value_1]
+     * @param [graph_title]
+     * @param [axis_x]
+     * @param [axis_y]
+     * @param [map_title]
+     * @param [page]
+     * @param [json]
+     * @param [fields]
+     */
+    public searchV1ProductsPostWithHttpInfo(action: string, sort_by: string, page_size: number, search_simple?: number, search_terms2?: string, tagtype_0?: string, tag_contains_0?: string, tag_0?: string, tagtype_1?: string, tag_contains_1?: string, tag_1?: string, additives?: string, ingredients_from_palm_oil?: string, ingredients_that_may_be_from_palm_oil?: string, ingredients_from_or_that_may_be_from_palm_oil?: string, nutriment_0?: string, nutriment_compare_0?: string, nutriment_value_0?: string, nutriment_1?: string, nutriment_compare_1?: string, nutriment_value_1?: string, graph_title?: string, axis_x?: string, axis_y?: string, map_title?: string, page?: number, json?: number, fields?: string, _options?: Configuration): Promise<HttpInfo<SearchForProductsResponse>> {
+        const result = this.api.searchV1ProductsPostWithHttpInfo(action, sort_by, page_size, search_simple, search_terms2, tagtype_0, tag_contains_0, tag_0, tagtype_1, tag_contains_1, tag_1, additives, ingredients_from_palm_oil, ingredients_that_may_be_from_palm_oil, ingredients_from_or_that_may_be_from_palm_oil, nutriment_0, nutriment_compare_0, nutriment_value_0, nutriment_1, nutriment_compare_1, nutriment_value_1, graph_title, axis_x, axis_y, map_title, page, json, fields, _options);
+        return result.toPromise();
+    }
+
+    /**
+     * Search products with filters (POST)
+     * Search products with filters (POST)
+     * @param action
+     * @param sort_by
+     * @param page_size
+     * @param [search_simple]
+     * @param [search_terms2] Search for words present in the product name, generic name, brands, categories, origins and labels
+     * @param [tagtype_0] First criteria type
+     * @param [tag_contains_0] First criteria condition
+     * @param [tag_0] First criteria value
+     * @param [tagtype_1] First criteria type
+     * @param [tag_contains_1] Second criteria condition
+     * @param [tag_1] Second criteria value
+     * @param [additives] Filter by presence of additives
+     * @param [ingredients_from_palm_oil] Filter by ingredients from palm oil
+     * @param [ingredients_that_may_be_from_palm_oil] Filter by ingredients that may be from palm oil
+     * @param [ingredients_from_or_that_may_be_from_palm_oil] Filter by ingredients from or that may be from palm oil
+     * @param [nutriment_0]
+     * @param [nutriment_compare_0]
+     * @param [nutriment_value_0]
+     * @param [nutriment_1]
+     * @param [nutriment_compare_1]
+     * @param [nutriment_value_1]
+     * @param [graph_title]
+     * @param [axis_x]
+     * @param [axis_y]
+     * @param [map_title]
+     * @param [page]
+     * @param [json]
+     * @param [fields]
+     */
+    public searchV1ProductsPost(action: string, sort_by: string, page_size: number, search_simple?: number, search_terms2?: string, tagtype_0?: string, tag_contains_0?: string, tag_0?: string, tagtype_1?: string, tag_contains_1?: string, tag_1?: string, additives?: string, ingredients_from_palm_oil?: string, ingredients_that_may_be_from_palm_oil?: string, ingredients_from_or_that_may_be_from_palm_oil?: string, nutriment_0?: string, nutriment_compare_0?: string, nutriment_value_0?: string, nutriment_1?: string, nutriment_compare_1?: string, nutriment_value_1?: string, graph_title?: string, axis_x?: string, axis_y?: string, map_title?: string, page?: number, json?: number, fields?: string, _options?: Configuration): Promise<SearchForProductsResponse> {
+        const result = this.api.searchV1ProductsPost(action, sort_by, page_size, search_simple, search_terms2, tagtype_0, tag_contains_0, tag_0, tagtype_1, tag_contains_1, tag_1, additives, ingredients_from_palm_oil, ingredients_that_may_be_from_palm_oil, ingredients_from_or_that_may_be_from_palm_oil, nutriment_0, nutriment_compare_0, nutriment_value_0, nutriment_1, nutriment_compare_1, nutriment_value_1, graph_title, axis_x, axis_y, map_title, page, json, fields, _options);
+        return result.toPromise();
+    }
+
 
 }
 

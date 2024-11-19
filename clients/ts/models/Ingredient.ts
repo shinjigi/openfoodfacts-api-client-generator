@@ -32,6 +32,10 @@ export class Ingredient {
     * Estimated percentage of the ingredient.
     */
     'percent_estimate'?: number;
+    /**
+    * A textual description of the processing applied to the ingredient.  This can include methods like roasting, frying, fermenting, or other techniques. 
+    */
+    'processing'?: string;
     'percent_max'?: ProductIngredientsPercentMax;
     /**
     * Minimum percentage of the ingredient.
@@ -107,6 +111,12 @@ export class Ingredient {
             "name": "percent_estimate",
             "baseName": "percent_estimate",
             "type": "number",
+            "format": ""
+        },
+        {
+            "name": "processing",
+            "baseName": "processing",
+            "type": "string",
             "format": ""
         },
         {

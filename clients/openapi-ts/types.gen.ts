@@ -42,6 +42,12 @@ export type Ingredient = {
      */
     percent_estimate?: number;
     /**
+     * A textual description of the processing applied to the ingredient.
+     * This can include methods like roasting, frying, fermenting, or other techniques.
+     *
+     */
+    processing?: string;
+    /**
      * Maximum percentage of the ingredient.
      */
     percent_max?: string | number;
@@ -376,7 +382,9 @@ export type Product_Eco_Score = {
                 transportation_value?: number;
                 transportation_values?: Product_Eco_Score_properties_ecoscore_data_properties_adjustments_properties_origins_of_ingredients_properties_values;
                 value?: number;
-                values?: 'ad' | 'al' | 'at' | 'ax' | 'ba' | 'be' | 'bg' | 'ch' | 'cy' | 'cz' | 'de' | 'dk' | 'dz' | 'ee' | 'eg' | 'es' | 'fi' | 'fo' | 'fr' | 'gg' | 'gi' | 'gr' | 'hr' | 'hu' | 'ie' | 'il' | 'im' | 'is' | 'it' | 'je' | 'lb' | 'li' | 'lt' | 'lu' | 'lv' | 'ly' | 'ma' | 'mc' | 'md' | 'me' | 'mk' | 'mt' | 'nl' | 'no' | 'pl' | 'ps' | 'pt' | 'ro' | 'rs' | 'se' | 'si' | 'sj' | 'sk' | 'sm' | 'sy' | 'tn' | 'tr' | 'ua' | 'uk' | 'us' | 'va' | 'world' | 'xk';
+                values?: {
+                    [key: string]: (number);
+                };
                 warning?: string;
             };
             packaging?: {
@@ -448,6 +456,7 @@ export type Product_Eco_Score = {
             packagings?: number;
         };
         missing_data_warning?: number;
+        missing_key_data?: number;
         previous_data?: {
             grade?: (string) | null;
             score?: (number) | null;
@@ -465,8 +474,6 @@ export type Product_Eco_Score = {
         [key: string]: unknown;
     }>;
 };
-
-export type values = 'ad' | 'al' | 'at' | 'ax' | 'ba' | 'be' | 'bg' | 'ch' | 'cy' | 'cz' | 'de' | 'dk' | 'dz' | 'ee' | 'eg' | 'es' | 'fi' | 'fo' | 'fr' | 'gg' | 'gi' | 'gr' | 'hr' | 'hu' | 'ie' | 'il' | 'im' | 'is' | 'it' | 'je' | 'lb' | 'li' | 'lt' | 'lu' | 'lv' | 'ly' | 'ma' | 'mc' | 'md' | 'me' | 'mk' | 'mt' | 'nl' | 'no' | 'pl' | 'ps' | 'pt' | 'ro' | 'rs' | 'se' | 'si' | 'sj' | 'sk' | 'sm' | 'sy' | 'tn' | 'tr' | 'ua' | 'uk' | 'us' | 'va' | 'world' | 'xk';
 
 export type Product_Extended = {
     additives_original_tags?: Array<(string)>;
@@ -579,6 +586,12 @@ export type Product_Images = {
     image_front_small_url?: string;
     image_front_thumb_url?: string;
     image_front_url?: string;
+    image_ingredients_small_url?: string;
+    image_ingredients_thumb_url?: string;
+    image_ingredients_url?: string;
+    image_packaging_small_url?: string;
+    image_packaging_thumb_url?: string;
+    image_packaging_url?: string;
     image_nutrition_small_url?: string;
     image_nutrition_thumb_url?: string;
     image_nutrition_url?: string;
@@ -712,6 +725,8 @@ export type Product_Ingredients = {
     allergens_tags?: Array<(string)>;
     ingredients?: Ingredient_properties_ingredients;
     ingredients_analysis?: {
+        'en:non-vegan'?: Array<(string)>;
+        'en:palm-oil-content-unknown'?: Array<(string)>;
         'en:palm-oil'?: Array<(string)>;
         'en:vegan-status-unknown'?: Array<(string)>;
         'en:vegetarian-status-unknown'?: Array<(string)>;
@@ -1097,6 +1112,11 @@ export type Product_Metadata = {
      */
     last_modified_t?: number;
     /**
+     * Date when the product page was last updated.
+     *
+     */
+    last_updated_t?: number;
+    /**
      * Id of the producer in case he provides his own data about a product (producer platform).
      *
      */
@@ -1268,6 +1288,7 @@ export type Product_Misc = {
     popularity_tags?: Array<(string)>;
     scans_n?: number;
     unique_scans_n?: number;
+    sortkey?: number;
     /**
      * Normalized version of serving_size.
      * Note that this is NOT the number of servings by product.
@@ -1585,6 +1606,7 @@ export type Product_Nutrition = {
         sodium?: number;
         sugars?: number;
         fiber?: number;
+        'carbon-footprint-from-known-ingredients_100g'?: number;
         'carbon-footprint-from-known-ingredients_product'?: number;
         'carbon-footprint-from-known-ingredients_serving'?: number;
         /**
@@ -1626,6 +1648,8 @@ export type Product_Nutrition = {
     nutrition_grades?: string;
     nutrition_grades_tags?: Array<(string)>;
     nutrition_score_beverage?: number;
+    nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients?: number;
+    nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value?: number;
     nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients?: number;
     nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value?: number;
     nutrition_score_warning_no_fiber?: number;
@@ -1692,6 +1716,7 @@ export type Product_Quality = {
     }>;
     data_quality_info_tags?: Array<(string)>;
     data_quality_tags?: Array<(string)>;
+    data_quality_warning_tags?: Array<(string)>;
     data_quality_warnings_tags?: Array<(string)>;
     /**
      * Source of data imported from producers.
@@ -2280,7 +2305,35 @@ export type GetSearchData = {
     };
 };
 
-export type GetSearchResponse = ({
+export type GetSearchResponse = (__paths__1cgi_1search_pl_get_responses_200_content_application_1json_schema);
+
+export type GetSearchError = unknown;
+
+export type SearchV1ProductsGetData = {
+    query?: {
+        brands_tags?: string;
+        categories_tags?: string;
+        countries_tags?: string;
+        fields?: string;
+        ingredients_tags?: string;
+        json?: 1;
+        labels_tags?: string;
+        packaging_tags?: string;
+        page?: number;
+        page_size?: number;
+        purchase_places_tags?: string;
+        /**
+         * Text search terms
+         */
+        search_terms?: string;
+        sort_by?: 'popularity' | 'product_name' | 'created_t' | 'created_datetime' | 'completed_t' | 'last_modified_t' | 'last_modified_datetime' | 'unique_scans_n' | 'score';
+        states_tags?: string;
+        stores_tags?: string;
+        trace_tags?: string;
+    };
+};
+
+export type SearchV1ProductsGetResponse = ({
     /**
      * Total number of products found
      *
@@ -2316,7 +2369,74 @@ export type GetSearchResponse = ({
     skip?: number;
 });
 
-export type GetSearchError = unknown;
+export type SearchV1ProductsGetError = unknown;
+
+export type SearchV1ProductsPostData = {
+    body: {
+        search_simple?: 1;
+        /**
+         * Search for words present in the product name, generic name, brands, categories, origins and labels
+         */
+        search_terms2?: string;
+        /**
+         * First criteria type
+         */
+        tagtype_0?: 'search' | 'brands' | 'categories' | 'packaging' | 'labels' | 'origins' | 'manufacturing_places' | 'emb_codes' | 'purchase_places' | 'stores' | 'countries' | 'ingredients' | 'additives' | 'allergens' | 'traces' | 'nutrition_grades' | 'nova_groups' | 'ecoscore' | 'languages' | 'creator' | 'editors' | 'states';
+        /**
+         * First criteria condition
+         */
+        tag_contains_0?: 'contains' | 'does_not_contain';
+        /**
+         * First criteria value
+         */
+        tag_0?: string;
+        tagtype_1?: __paths__1cgi_1search_pl_post_requestBody_content_multipart_1form_data_schema_properties_tagtype_0;
+        /**
+         * Second criteria condition
+         */
+        tag_contains_1?: 'contains' | 'does_not_contain';
+        /**
+         * Second criteria value
+         */
+        tag_1?: string;
+        /**
+         * Filter by presence of additives
+         */
+        additives?: 'without' | 'with' | 'indifferent';
+        /**
+         * Filter by ingredients from palm oil
+         */
+        ingredients_from_palm_oil?: 'without' | 'with' | 'indifferent';
+        /**
+         * Filter by ingredients that may be from palm oil
+         */
+        ingredients_that_may_be_from_palm_oil?: 'without' | 'with' | 'indifferent';
+        /**
+         * Filter by ingredients from or that may be from palm oil
+         */
+        ingredients_from_or_that_may_be_from_palm_oil?: 'without' | 'with' | 'indifferent';
+        nutriment_0?: string;
+        nutriment_compare_0?: 'lt' | 'lte' | 'gt' | 'gte' | 'eq';
+        nutriment_value_0?: string;
+        nutriment_1?: string;
+        nutriment_compare_1?: 'lt' | 'lte' | 'gt' | 'gte' | 'eq';
+        nutriment_value_1?: string;
+        graph_title?: string;
+        axis_x?: string;
+        axis_y?: string;
+        map_title?: string;
+        action: 'process';
+        sort_by: 'popularity' | 'product_name' | 'created_t' | 'created_datetime' | 'completed_t' | 'last_modified_t' | 'last_modified_datetime' | 'unique_scans_n';
+        page?: number;
+        page_size: number;
+        json?: 0 | 1;
+        fields?: string;
+    };
+};
+
+export type SearchV1ProductsPostResponse = (__paths__1cgi_1search_pl_get_responses_200_content_application_1json_schema);
+
+export type SearchV1ProductsPostError = unknown;
 
 export type GetCgiSuggestPlData = {
     query?: {

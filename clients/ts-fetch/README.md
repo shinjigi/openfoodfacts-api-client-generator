@@ -21,13 +21,13 @@ It can be used in both TypeScript and JavaScript. In TypeScript, the definition 
 
 To build and compile the typescript sources to javascript use:
 ```
-pnpm install
-pnpm run build
+npm install
+npm run build
 ```
 
 ### Publishing
 
-First build the package then run `pnpm publish`
+First build the package then run `npm publish`
 
 ### Consuming
 
@@ -36,11 +36,11 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-pnpm install @iside/ac-open-food-facts-client-ts-fetch@1.189.0 --save
+npm install @iside/ac-open-food-facts-client-ts-fetch@1.189.0 --save
 ```
 
 _unPublished (not recommended):_
 
 ```
-pnpm install PATH_TO_GENERATED_PACKAGE --save
+npm install PATH_TO_GENERATED_PACKAGE --save
 ```

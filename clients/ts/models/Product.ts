@@ -148,6 +148,7 @@ export class Product {
     'popularity_tags'?: Array<string>;
     'scans_n'?: number;
     'unique_scans_n'?: number;
+    'sortkey'?: number;
     /**
     * Normalized version of serving_size. Note that this is NOT the number of servings by product. <small>(in perl, see `normalize_serving_size`)</small> 
     */
@@ -216,6 +217,12 @@ export class Product {
     'image_front_small_url'?: string;
     'image_front_thumb_url'?: string;
     'image_front_url'?: string;
+    'image_ingredients_small_url'?: string;
+    'image_ingredients_thumb_url'?: string;
+    'image_ingredients_url'?: string;
+    'image_packaging_small_url'?: string;
+    'image_packaging_thumb_url'?: string;
+    'image_packaging_url'?: string;
     'image_nutrition_small_url'?: string;
     'image_nutrition_thumb_url'?: string;
     'image_nutrition_url'?: string;
@@ -334,6 +341,8 @@ export class Product {
     'nutrition_grades'?: string;
     'nutrition_grades_tags'?: Array<string>;
     'nutrition_score_beverage'?: number;
+    'nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients'?: number;
+    'nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value'?: number;
     'nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients'?: number;
     'nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value'?: number;
     'nutrition_score_warning_no_fiber'?: number;
@@ -358,6 +367,7 @@ export class Product {
     'data_quality_errors_tags'?: Array<any>;
     'data_quality_info_tags'?: Array<string>;
     'data_quality_tags'?: Array<string>;
+    'data_quality_warning_tags'?: Array<string>;
     'data_quality_warnings_tags'?: Array<string>;
     /**
     * Source of data imported from producers. 
@@ -458,6 +468,10 @@ export class Product {
     * Date when the product page was last modified. 
     */
     'last_modified_t'?: number;
+    /**
+    * Date when the product page was last updated. 
+    */
+    'last_updated_t'?: number;
     /**
     * Id of the producer in case he provides his own data about a product (producer platform). 
     */
@@ -728,6 +742,12 @@ export class Product {
             "format": ""
         },
         {
+            "name": "sortkey",
+            "baseName": "sortkey",
+            "type": "number",
+            "format": ""
+        },
+        {
             "name": "serving_quantity",
             "baseName": "serving_quantity",
             "type": "string",
@@ -934,6 +954,42 @@ export class Product {
         {
             "name": "image_front_url",
             "baseName": "image_front_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_ingredients_small_url",
+            "baseName": "image_ingredients_small_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_ingredients_thumb_url",
+            "baseName": "image_ingredients_thumb_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_ingredients_url",
+            "baseName": "image_ingredients_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_packaging_small_url",
+            "baseName": "image_packaging_small_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_packaging_thumb_url",
+            "baseName": "image_packaging_thumb_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_packaging_url",
+            "baseName": "image_packaging_url",
             "type": "string",
             "format": ""
         },
@@ -1322,6 +1378,18 @@ export class Product {
             "format": ""
         },
         {
+            "name": "nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients",
+            "baseName": "nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value",
+            "baseName": "nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value",
+            "type": "number",
+            "format": ""
+        },
+        {
             "name": "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients",
             "baseName": "nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients",
             "type": "number",
@@ -1426,6 +1494,12 @@ export class Product {
         {
             "name": "data_quality_tags",
             "baseName": "data_quality_tags",
+            "type": "Array<string>",
+            "format": ""
+        },
+        {
+            "name": "data_quality_warning_tags",
+            "baseName": "data_quality_warning_tags",
             "type": "Array<string>",
             "format": ""
         },
@@ -1756,6 +1830,12 @@ export class Product {
         {
             "name": "last_modified_t",
             "baseName": "last_modified_t",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "last_updated_t",
+            "baseName": "last_updated_t",
             "type": "number",
             "format": ""
         },

@@ -1,7 +1,7 @@
 generatorName: typescript-fetch
 outputDir: ./clients/ts-fetch
-#inputSpec: ../../api-external/openfoodfacts/ref/api-short.yml
-inputSpec: ../../api-external/openfoodfacts/ref/api.yml
+#inputSpec: docs/swagger-ui/src/api-ref/api-short.yml
+inputSpec: docs/swagger-ui/src/api-ref/api.yml
 verbose: false
 #templateDir: ./clients/ts-fetch/custom-templates
 gitHost: "EuroconsumersIT@dev.azure.com"

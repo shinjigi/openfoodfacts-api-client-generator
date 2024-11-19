@@ -68,6 +68,7 @@ export class ProductMisc {
     'popularity_tags'?: Array<string>;
     'scans_n'?: number;
     'unique_scans_n'?: number;
+    'sortkey'?: number;
     /**
     * Normalized version of serving_size. Note that this is NOT the number of servings by product. <small>(in perl, see `normalize_serving_size`)</small> 
     */
@@ -203,6 +204,12 @@ export class ProductMisc {
         {
             "name": "unique_scans_n",
             "baseName": "unique_scans_n",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "sortkey",
+            "baseName": "sortkey",
             "type": "number",
             "format": ""
         },

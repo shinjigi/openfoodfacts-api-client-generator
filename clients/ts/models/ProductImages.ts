@@ -21,6 +21,12 @@ export class ProductImages {
     'image_front_small_url'?: string;
     'image_front_thumb_url'?: string;
     'image_front_url'?: string;
+    'image_ingredients_small_url'?: string;
+    'image_ingredients_thumb_url'?: string;
+    'image_ingredients_url'?: string;
+    'image_packaging_small_url'?: string;
+    'image_packaging_thumb_url'?: string;
+    'image_packaging_url'?: string;
     'image_nutrition_small_url'?: string;
     'image_nutrition_thumb_url'?: string;
     'image_nutrition_url'?: string;
@@ -55,6 +61,42 @@ export class ProductImages {
         {
             "name": "image_front_url",
             "baseName": "image_front_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_ingredients_small_url",
+            "baseName": "image_ingredients_small_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_ingredients_thumb_url",
+            "baseName": "image_ingredients_thumb_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_ingredients_url",
+            "baseName": "image_ingredients_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_packaging_small_url",
+            "baseName": "image_packaging_small_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_packaging_thumb_url",
+            "baseName": "image_packaging_thumb_url",
+            "type": "string",
+            "format": ""
+        },
+        {
+            "name": "image_packaging_url",
+            "baseName": "image_packaging_url",
             "type": "string",
             "format": ""
         },

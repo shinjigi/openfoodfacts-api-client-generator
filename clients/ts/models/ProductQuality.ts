@@ -20,6 +20,7 @@ export class ProductQuality {
     'data_quality_errors_tags'?: Array<any>;
     'data_quality_info_tags'?: Array<string>;
     'data_quality_tags'?: Array<string>;
+    'data_quality_warning_tags'?: Array<string>;
     'data_quality_warnings_tags'?: Array<string>;
     /**
     * Source of data imported from producers. 
@@ -67,6 +68,12 @@ export class ProductQuality {
         {
             "name": "data_quality_tags",
             "baseName": "data_quality_tags",
+            "type": "Array<string>",
+            "format": ""
+        },
+        {
+            "name": "data_quality_warning_tags",
+            "baseName": "data_quality_warning_tags",
             "type": "Array<string>",
             "format": ""
         },

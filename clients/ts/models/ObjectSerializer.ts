@@ -120,14 +120,14 @@ import { Panel   , PanelEvaluationEnum     , PanelSizeEnum    } from '../models/
 import { PanelElement } from '../models/PanelElement';
 import { PanelGroupElement } from '../models/PanelGroupElement';
 import { Panels } from '../models/Panels';
-import { Product                                                                                                                                   , ProductNutritionDataPerEnum  , ProductNutritionDataPreparedPerEnum               , ProductNutriscore2021TagsEnum  , ProductNutriscore2023TagsEnum  , ProductNutriscoreGradeEnum    , ProductNutriscoreTagsEnum                                                                          } from '../models/Product';
+import { Product                                                                                                                                          , ProductNutritionDataPerEnum  , ProductNutritionDataPreparedPerEnum                 , ProductNutriscore2021TagsEnum  , ProductNutriscore2023TagsEnum  , ProductNutriscoreGradeEnum    , ProductNutriscoreTagsEnum                                                                            } from '../models/Product';
 import { ProductAllOfManufacturer } from '../models/ProductAllOfManufacturer';
 import { ProductAttributeGroup , ProductAttributeGroupStatusEnum    , ProductAttributeGroupGradeEnum       } from '../models/ProductAttributeGroup';
 import { ProductAttributeGroups } from '../models/ProductAttributeGroups';
 import { ProductBase } from '../models/ProductBase';
 import { ProductEcoScore } from '../models/ProductEcoScore';
 import { ProductEcoscoreAdjustments } from '../models/ProductEcoscoreAdjustments';
-import { ProductEcoscoreAdjustmentsOriginsOfIngredients      , ProductEcoscoreAdjustmentsOriginsOfIngredientsTransportationScoresEnum   , ProductEcoscoreAdjustmentsOriginsOfIngredientsTransportationValuesEnum   , ProductEcoscoreAdjustmentsOriginsOfIngredientsValuesEnum    } from '../models/ProductEcoscoreAdjustmentsOriginsOfIngredients';
+import { ProductEcoscoreAdjustmentsOriginsOfIngredients } from '../models/ProductEcoscoreAdjustmentsOriginsOfIngredients';
 import { ProductEcoscoreAdjustmentsPackaging } from '../models/ProductEcoscoreAdjustmentsPackaging';
 import { ProductEcoscoreAdjustmentsProductionSystem } from '../models/ProductEcoscoreAdjustmentsProductionSystem';
 import { ProductEcoscoreAdjustmentsThreatenedSpecies } from '../models/ProductEcoscoreAdjustmentsThreatenedSpecies';
@@ -152,8 +152,8 @@ import { ProductMetadata } from '../models/ProductMetadata';
 import { ProductMisc } from '../models/ProductMisc';
 import { ProductMiscNutrientLevels, ProductMiscNutrientLevelsFatEnum  , ProductMiscNutrientLevelsSaltEnum  , ProductMiscNutrientLevelsSaturatedFatEnum  , ProductMiscNutrientLevelsSugarsEnum   } from '../models/ProductMiscNutrientLevels';
 import { ProductNutriscore , ProductNutriscoreNutriscore2021TagsEnum  , ProductNutriscoreNutriscore2023TagsEnum   , ProductNutriscoreNutriscoreGradeEnum    , ProductNutriscoreNutriscoreTagsEnum    } from '../models/ProductNutriscore';
-import { ProductNutrition , ProductNutritionNutritionDataPerEnum  , ProductNutritionNutritionDataPreparedPerEnum               } from '../models/ProductNutrition';
-import { ProductNutritionNutriments    , ProductNutritionNutrimentsCarbohydratesUnitEnum       , ProductNutritionNutrimentsCocoaUnitEnum       , ProductNutritionNutrimentsEnergyUnitEnum     , ProductNutritionNutrimentsEnergyKjUnitEnum                                                            } from '../models/ProductNutritionNutriments';
+import { ProductNutrition , ProductNutritionNutritionDataPerEnum  , ProductNutritionNutritionDataPreparedPerEnum                 } from '../models/ProductNutrition';
+import { ProductNutritionNutriments    , ProductNutritionNutrimentsCarbohydratesUnitEnum       , ProductNutritionNutrimentsCocoaUnitEnum       , ProductNutritionNutrimentsEnergyUnitEnum     , ProductNutritionNutrimentsEnergyKjUnitEnum                                                             } from '../models/ProductNutritionNutriments';
 import { ProductNutritionNutriscoreData } from '../models/ProductNutritionNutriscoreData';
 import { ProductQuality } from '../models/ProductQuality';
 import { ProductSelectedImages } from '../models/ProductSelectedImages';
@@ -218,9 +218,6 @@ let enumsMap: Set<string> = new Set<string>([
     "ProductNutriscoreTagsEnum",
     "ProductAttributeGroupStatusEnum",
     "ProductAttributeGroupGradeEnum",
-    "ProductEcoscoreAdjustmentsOriginsOfIngredientsTransportationScoresEnum",
-    "ProductEcoscoreAdjustmentsOriginsOfIngredientsTransportationValuesEnum",
-    "ProductEcoscoreAdjustmentsOriginsOfIngredientsValuesEnum",
     "ProductMiscNutrientLevelsFatEnum",
     "ProductMiscNutrientLevelsSaltEnum",
     "ProductMiscNutrientLevelsSaturatedFatEnum",
@@ -343,7 +340,7 @@ type MimeTypeDescriptor = {
  * the payload.
  */
 const parseMimeType = (mimeType: string): MimeTypeDescriptor => {
-    const [type = '', subtype = ''] = mimeType.split('/');
+    const [type, subtype] = mimeType.split('/');
     return {
         type,
         subtype,
@@ -550,7 +547,7 @@ export class ObjectSerializer {
         if (mediaType === undefined) {
             return undefined;
         }
-        return (mediaType.split(";")[0] ?? '').trim().toLowerCase();
+        return mediaType.split(";")[0].trim().toLowerCase();
     }
 
     /**

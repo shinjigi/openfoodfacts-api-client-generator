@@ -400,6 +400,9 @@ They may contain values that could not yet get matched to their respective taxon
         unique_scans_n: {
             type: 'integer'
         },
+        sortkey: {
+            type: 'integer'
+        },
         serving_quantity: {
             type: 'string',
             description: `Normalized version of serving_size.
@@ -617,6 +620,24 @@ See also tutorials about images:
             type: 'string'
         },
         image_front_url: {
+            type: 'string'
+        },
+        image_ingredients_small_url: {
+            type: 'string'
+        },
+        image_ingredients_thumb_url: {
+            type: 'string'
+        },
+        image_ingredients_url: {
+            type: 'string'
+        },
+        image_packaging_small_url: {
+            type: 'string'
+        },
+        image_packaging_thumb_url: {
+            type: 'string'
+        },
+        image_packaging_url: {
             type: 'string'
         },
         image_nutrition_small_url: {
@@ -869,7 +890,8 @@ This is very handy if you display the product to users.
                 '(?<image_type>front|packaging|ingredients|nutrition|other)': {
                     description: `See property \`front\` to get the real type of those objects
 (Put this way because of a [bug in rapidoc](https://github.com/rapi-doc/RapiDoc/issues/880))
-`
+`,
+                    type: 'string'
                 }
             }
         }
@@ -965,8 +987,15 @@ and complementary data of interest.
                                     type: 'integer'
                                 },
                                 values: {
-                                    type: 'string',
-                                    enum: ['ad', 'al', 'at', 'ax', 'ba', 'be', 'bg', 'ch', 'cy', 'cz', 'de', 'dk', 'dz', 'ee', 'eg', 'es', 'fi', 'fo', 'fr', 'gg', 'gi', 'gr', 'hr', 'hu', 'ie', 'il', 'im', 'is', 'it', 'je', 'lb', 'li', 'lt', 'lu', 'lv', 'ly', 'ma', 'mc', 'md', 'me', 'mk', 'mt', 'nl', 'no', 'pl', 'ps', 'pt', 'ro', 'rs', 'se', 'si', 'sj', 'sk', 'sm', 'sy', 'tn', 'tr', 'ua', 'uk', 'us', 'va', 'world', 'xk']
+                                    type: 'object',
+                                    propertyNames: {
+                                        type: 'string',
+                                        enum: ['ad', 'al', 'at', 'ax', 'ba', 'be', 'bg', 'ch', 'cy', 'cz', 'de', 'dk', 'dz', 'ee', 'eg', 'es', 'fi', 'fo', 'fr', 'gg', 'gi', 'gr', 'hr', 'hu', 'ie', 'il', 'im', 'is', 'it', 'je', 'lb', 'li', 'lt', 'lu', 'lv', 'ly', 'ma', 'mc', 'md', 'me', 'mk', 'mt', 'nl', 'no', 'pl', 'ps', 'pt', 'ro', 'rs', 'se', 'si', 'sj', 'sk', 'sm', 'sy', 'tn', 'tr', 'ua', 'uk', 'us', 'va', 'world', 'xk']
+                                    },
+                                    additionalProperties: {
+                                        type: 'number',
+                                        default: 0
+                                    }
                                 },
                                 warning: {
                                     type: 'string'
@@ -1174,6 +1203,9 @@ like name_fr (for french).
                 missing_data_warning: {
                     type: 'integer'
                 },
+                missing_key_data: {
+                    type: 'integer'
+                },
                 previous_data: {
                     type: 'object',
                     properties: {
@@ -1256,6 +1288,18 @@ export const Product_IngredientsSchema = {
         ingredients_analysis: {
             type: 'object',
             properties: {
+                'en:non-vegan': {
+                    type: 'array',
+                    items: {
+                        type: 'string'
+                    }
+                },
+                'en:palm-oil-content-unknown': {
+                    type: 'array',
+                    items: {
+                        type: 'string'
+                    }
+                },
                 'en:palm-oil': {
                     type: 'array',
                     items: {
@@ -1843,11 +1887,16 @@ the UK FSA score and adapted for the French market
                 fiber: {
                     type: 'integer'
                 },
+                'carbon-footprint-from-known-ingredients_100g': {
+                    type: 'number',
+                    format: 'float'
+                },
                 'carbon-footprint-from-known-ingredients_product': {
                     type: 'integer'
                 },
                 'carbon-footprint-from-known-ingredients_serving': {
-                    type: 'number'
+                    type: 'number',
+                    format: 'float'
                 },
                 erythritol: {
                     type: 'number',
@@ -1985,6 +2034,12 @@ Some products with multiple components might have multiple Nutri-Score
             }
         },
         nutrition_score_beverage: {
+            type: 'integer'
+        },
+        nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients: {
+            type: 'integer'
+        },
+        nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value: {
             type: 'integer'
         },
         nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients: {
@@ -2405,6 +2460,12 @@ export const Product_QualitySchema = {
                 type: 'string'
             }
         },
+        data_quality_warning_tags: {
+            type: 'array',
+            items: {
+                type: 'string'
+            }
+        },
         data_quality_warnings_tags: {
             type: 'array',
             items: {
@@ -2779,6 +2840,11 @@ See also \`entry_dates_tags\`
         last_modified_t: {
             type: 'integer',
             description: `Date when the product page was last modified.
+`
+        },
+        last_updated_t: {
+            type: 'integer',
+            description: `Date when the product page was last updated.
 `
         },
         owner: {
@@ -3381,6 +3447,13 @@ like estimate on their quantity.
         percent_estimate: {
             type: 'number',
             description: 'Estimated percentage of the ingredient.'
+        },
+        processing: {
+            type: 'string',
+            description: `A textual description of the processing applied to the ingredient. 
+This can include methods like roasting, frying, fermenting, or other techniques.
+`,
+            examples: ['en:malted']
         },
         percent_max: {
             type: ['string', 'number'],

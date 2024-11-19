@@ -27,6 +27,7 @@ export class ProductEcoscoreData {
     'ecoscore_not_applicable_for_category'?: string;
     'missing'?: ProductEcoscoreDataMissing;
     'missing_data_warning'?: number;
+    'missing_key_data'?: number;
     'previous_data'?: ProductEcoscoreDataPreviousData;
     'score'?: number;
     'scores'?: any;
@@ -76,6 +77,12 @@ export class ProductEcoscoreData {
         {
             "name": "missing_data_warning",
             "baseName": "missing_data_warning",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "missing_key_data",
+            "baseName": "missing_key_data",
             "type": "number",
             "format": ""
         },

@@ -42,6 +42,8 @@ export class ProductNutrition {
     'nutrition_grades'?: string;
     'nutrition_grades_tags'?: Array<string>;
     'nutrition_score_beverage'?: number;
+    'nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients'?: number;
+    'nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value'?: number;
     'nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients'?: number;
     'nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value'?: number;
     'nutrition_score_warning_no_fiber'?: number;
@@ -105,6 +107,18 @@ export class ProductNutrition {
         {
             "name": "nutrition_score_beverage",
             "baseName": "nutrition_score_beverage",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients",
+            "baseName": "nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value",
+            "baseName": "nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value",
             "type": "number",
             "format": ""
         },

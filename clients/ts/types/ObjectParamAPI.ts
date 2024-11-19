@@ -153,6 +153,323 @@ export interface AuxiliaryOperationsApiPostCgiProductImageUnselectPlRequest {
     id?: string
 }
 
+export interface AuxiliaryOperationsApiSearchV1ProductsGetRequest {
+    /**
+     * Text search terms
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    search_terms?: string
+    /**
+     * 
+     * Defaults to: 1
+     * @type number
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    page?: number
+    /**
+     * 
+     * Maximum: 1000
+     * Defaults to: 24
+     * @type number
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    page_size?: number
+    /**
+     * 
+     * Defaults to: undefined
+     * @type 1
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    json?: 1
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    fields?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type &#39;popularity&#39; | &#39;product_name&#39; | &#39;created_t&#39; | &#39;created_datetime&#39; | &#39;completed_t&#39; | &#39;last_modified_t&#39; | &#39;last_modified_datetime&#39; | &#39;unique_scans_n&#39; | &#39;score&#39;
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    sort_by?: 'popularity' | 'product_name' | 'created_t' | 'created_datetime' | 'completed_t' | 'last_modified_t' | 'last_modified_datetime' | 'unique_scans_n' | 'score'
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    states_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    brands_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    categories_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    labels_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    packaging_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    purchase_places_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    stores_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    countries_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    ingredients_tags?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsGet
+     */
+    trace_tags?: string
+}
+
+export interface AuxiliaryOperationsApiSearchV1ProductsPostRequest {
+    /**
+     * 
+     * Defaults to: &#39;process&#39;
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    action: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    sort_by: string
+    /**
+     * 
+     * Minimum: 1
+     * Maximum: 1000
+     * Defaults to: 20
+     * @type number
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    page_size: number
+    /**
+     * 
+     * Defaults to: undefined
+     * @type number
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    search_simple?: number
+    /**
+     * Search for words present in the product name, generic name, brands, categories, origins and labels
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    search_terms2?: string
+    /**
+     * First criteria type
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    tagtype_0?: string
+    /**
+     * First criteria condition
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    tag_contains_0?: string
+    /**
+     * First criteria value
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    tag_0?: string
+    /**
+     * First criteria type
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    tagtype_1?: string
+    /**
+     * Second criteria condition
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    tag_contains_1?: string
+    /**
+     * Second criteria value
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    tag_1?: string
+    /**
+     * Filter by presence of additives
+     * Defaults to: &#39;indifferent&#39;
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    additives?: string
+    /**
+     * Filter by ingredients from palm oil
+     * Defaults to: &#39;indifferent&#39;
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    ingredients_from_palm_oil?: string
+    /**
+     * Filter by ingredients that may be from palm oil
+     * Defaults to: &#39;indifferent&#39;
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    ingredients_that_may_be_from_palm_oil?: string
+    /**
+     * Filter by ingredients from or that may be from palm oil
+     * Defaults to: &#39;indifferent&#39;
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    ingredients_from_or_that_may_be_from_palm_oil?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    nutriment_0?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    nutriment_compare_0?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    nutriment_value_0?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    nutriment_1?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    nutriment_compare_1?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    nutriment_value_1?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    graph_title?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    axis_x?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    axis_y?: string
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    map_title?: string
+    /**
+     * 
+     * Defaults to: 1
+     * @type number
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    page?: number
+    /**
+     * 
+     * Defaults to: 1
+     * @type number
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    json?: number
+    /**
+     * 
+     * Defaults to: undefined
+     * @type string
+     * @memberof AuxiliaryOperationsApisearchV1ProductsPost
+     */
+    fields?: string
+}
+
 export class ObjectAuxiliaryOperationsApi {
     private api: ObservableAuxiliaryOperationsApi
 
@@ -176,6 +493,42 @@ export class ObjectAuxiliaryOperationsApi {
      */
     public postCgiProductImageUnselectPl(param: AuxiliaryOperationsApiPostCgiProductImageUnselectPlRequest = {}, options?: Configuration): Promise<UnselectAPhotoResponse> {
         return this.api.postCgiProductImageUnselectPl(param.code, param.id,  options).toPromise();
+    }
+
+    /**
+     * Search products with filters (GET)
+     * Search products with filters (GET)
+     * @param param the request object
+     */
+    public searchV1ProductsGetWithHttpInfo(param: AuxiliaryOperationsApiSearchV1ProductsGetRequest = {}, options?: Configuration): Promise<HttpInfo<SearchForProductsResponse>> {
+        return this.api.searchV1ProductsGetWithHttpInfo(param.search_terms, param.page, param.page_size, param.json, param.fields, param.sort_by, param.states_tags, param.brands_tags, param.categories_tags, param.labels_tags, param.packaging_tags, param.purchase_places_tags, param.stores_tags, param.countries_tags, param.ingredients_tags, param.trace_tags,  options).toPromise();
+    }
+
+    /**
+     * Search products with filters (GET)
+     * Search products with filters (GET)
+     * @param param the request object
+     */
+    public searchV1ProductsGet(param: AuxiliaryOperationsApiSearchV1ProductsGetRequest = {}, options?: Configuration): Promise<SearchForProductsResponse> {
+        return this.api.searchV1ProductsGet(param.search_terms, param.page, param.page_size, param.json, param.fields, param.sort_by, param.states_tags, param.brands_tags, param.categories_tags, param.labels_tags, param.packaging_tags, param.purchase_places_tags, param.stores_tags, param.countries_tags, param.ingredients_tags, param.trace_tags,  options).toPromise();
+    }
+
+    /**
+     * Search products with filters (POST)
+     * Search products with filters (POST)
+     * @param param the request object
+     */
+    public searchV1ProductsPostWithHttpInfo(param: AuxiliaryOperationsApiSearchV1ProductsPostRequest, options?: Configuration): Promise<HttpInfo<SearchForProductsResponse>> {
+        return this.api.searchV1ProductsPostWithHttpInfo(param.action, param.sort_by, param.page_size, param.search_simple, param.search_terms2, param.tagtype_0, param.tag_contains_0, param.tag_0, param.tagtype_1, param.tag_contains_1, param.tag_1, param.additives, param.ingredients_from_palm_oil, param.ingredients_that_may_be_from_palm_oil, param.ingredients_from_or_that_may_be_from_palm_oil, param.nutriment_0, param.nutriment_compare_0, param.nutriment_value_0, param.nutriment_1, param.nutriment_compare_1, param.nutriment_value_1, param.graph_title, param.axis_x, param.axis_y, param.map_title, param.page, param.json, param.fields,  options).toPromise();
+    }
+
+    /**
+     * Search products with filters (POST)
+     * Search products with filters (POST)
+     * @param param the request object
+     */
+    public searchV1ProductsPost(param: AuxiliaryOperationsApiSearchV1ProductsPostRequest, options?: Configuration): Promise<SearchForProductsResponse> {
+        return this.api.searchV1ProductsPost(param.action, param.sort_by, param.page_size, param.search_simple, param.search_terms2, param.tagtype_0, param.tag_contains_0, param.tag_0, param.tagtype_1, param.tag_contains_1, param.tag_1, param.additives, param.ingredients_from_palm_oil, param.ingredients_that_may_be_from_palm_oil, param.ingredients_from_or_that_may_be_from_palm_oil, param.nutriment_0, param.nutriment_compare_0, param.nutriment_value_0, param.nutriment_1, param.nutriment_compare_1, param.nutriment_value_1, param.graph_title, param.axis_x, param.axis_y, param.map_title, param.page, param.json, param.fields,  options).toPromise();
     }
 
 }

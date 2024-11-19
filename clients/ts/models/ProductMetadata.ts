@@ -51,6 +51,10 @@ export class ProductMetadata {
     */
     'last_modified_t'?: number;
     /**
+    * Date when the product page was last updated. 
+    */
+    'last_updated_t'?: number;
+    /**
     * Id of the producer in case he provides his own data about a product (producer platform). 
     */
     'owner'?: string;
@@ -155,6 +159,12 @@ export class ProductMetadata {
         {
             "name": "last_modified_t",
             "baseName": "last_modified_t",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "last_updated_t",
+            "baseName": "last_updated_t",
             "type": "number",
             "format": ""
         },
