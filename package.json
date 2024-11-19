@@ -35,7 +35,8 @@
   "license": "ISC",
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.15.3",
-    "@redocly/cli": "^1.25.8"
+    "@redocly/cli": "^1.25.8",
+    "npx": "^10.2.2"
   },
   "dependencies": {
     "@iside/ac-open-food-facts-clients": "file:"

@@ -18,6 +18,9 @@ importers:
       '@redocly/cli':
         specifier: ^1.25.8
         version: 1.25.11(enzyme@3.11.0)
+      npx:
+        specifier: ^10.2.2
+        version: 10.2.2
 
   clients/ts-fetch:
     dependencies:
@@ -2069,6 +2072,14 @@ packages:
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
+
+  npx@10.2.2:
+    resolution: {integrity: sha512-eImmySusyeWphzs5iNh791XbZnZG0FSNvM4KSah34pdQQIDsdTDhIwg1sjN3AIVcjGLpbQ/YcfqHPshKZQK1fA==}
+    deprecated: This package is now part of the npm CLI.
+    hasBin: true
+    bundledDependencies:
+      - npm
+      - libnpx
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
@@ -5718,6 +5729,8 @@ snapshots:
   npm-run-path@4.0.1:
     dependencies:
       path-key: 3.1.1
+
+  npx@10.2.2: {}
 
   nth-check@2.1.1:
     dependencies:
