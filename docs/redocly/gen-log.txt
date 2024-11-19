@@ -1522,4 +1522,4 @@
  ⚠  Component: "AppCredentials" is never used.
  ⚠  Two schemas are referenced with the same name but different content. Renamed add_photo_to_existing_product to add_photo_to_existing_product-2.
  ⚠  Two schemas are referenced with the same name but different content. Renamed add_or_edit_a_product to add_or_edit_a_product-2.
-🚀 off@v2 → ./docs/redocly/openapi-v2.ts [363.2ms]
+🚀 off@v2 → ./docs/redocly/openapi-v2.ts [359.8ms]

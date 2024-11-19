@@ -119,5 +119,6 @@ dist
 .npm-cache
 
 docs/swagger-ui/node_modules
+docs/rapidoc/node_modules
 docs/LoginApplicationActions.docx
 docs/_others

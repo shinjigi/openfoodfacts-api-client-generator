@@ -1,0 +1,15 @@
+colorizeOutput: true
+errorsOnly: true
+files:
+  - docs/swagger-ui/src/api-ref/api.yml
+ruleset: ibm-openapi-validator.ruleset.yaml
+limits:
+  warnings: 5
+ignoreFiles:
+  - "ignored/file1"
+logLevels:
+  root: "info"
+  "ibm-schema-description-exists": "debug"
+outputFormat: "text"
+summaryOnly: true
+produceImpactScore: false

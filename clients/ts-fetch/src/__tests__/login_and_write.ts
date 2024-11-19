@@ -117,7 +117,7 @@ async function authenticatedRequest<T extends AuthData>(
 
 // Esempio di utilizzo
 async function main() {
-  const username = "altroconsumo";
+  const username = "XXXXXXXXX";
   const password = "*******";
 
   if (!username || !password) {
@@ -135,10 +135,10 @@ async function main() {
       code: "3017620422003", // Barcode di Nutella
       nutriment_sodium: "0.0427",
       nutriment_sodium_unit: "g",
-      app_name: "Altroconsumo Food PWA",
+      app_name: "XXXXXXXXXX Food PWA",
       app_version: "1.0",
       app_uuid: "12345-67890-abcde-fghij",
-      email: "openfoodfact@altroconsumo.it"
+      email: "openfoodfact@XXXXXXXXXX.it"
     };
 
     const response = await authenticatedRequest(sessionCookie, "/cgi/product_jqm2.pl", "POST", productData);

@@ -1,0 +1,4 @@
+extends: "@ibm-cloud/openapi-ruleset"
+rules:
+  ibm-integer-attributes: off
+  ibm-property-casing-convention: off

@@ -52,6 +52,25 @@ Additional experimental generators are included:
 - Node.js
 - pnpm
 - OpenAPI Generator CLI
+- npx (installed via dev dependencies)
+
+## Prerequisites
+
+- Node.js (v14 or higher)
+- pnpm (v6 or higher)
+- OpenAPI Generator CLI (installed via dev dependencies)
+- npx (installed via dev dependencies)
+
+## Installation
+
+```bash
+# Install project dependencies
+pnpm install
+
+# Verify installations
+pnpm openapi-generator-cli version
+pnpm redocly --version
+```
 
 ## Available Scripts
 
