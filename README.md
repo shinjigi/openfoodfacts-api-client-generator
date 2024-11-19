@@ -1,95 +1,134 @@
-**Generating the Client**
+# Open Food Facts Clients
 
-**Environment Variables:**
+Client library generation for Open Food Facts API integration, based on a forked version of the OpenFoodFacts API specification.
 
-- `JAVA_HOME`: Set the path to your Java installation directory (e.g., `/usr/lib/jvm/java-17-openjdk`).
-- `DEFAULT_JVM_OPTS` (Optional): Customize Java virtual machine options (e.g., `--add-opens java.base/java.util=ALL-UNNAMED`).
+## Overview
 
-**JavaScript Generator Documentation:**
+This project focuses on generating type-safe API clients from OpenAPI (Swagger) specifications, primarily for TypeScript and JavaScript environments. It uses a custom fork of the OpenFoodFacts API specification available at [shinjigi/openfoodfacts-server/altroconsumo](https://github.com/shinjigi/openfoodfacts-server/tree/altroconsumo).
 
-- Refer to the OpenAPI Generator's JavaScript generator documentation for detailed guidance: [https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/javascript.md](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/javascript.md)
+## Core Technologies
 
-**Building OpenAPI Generator:**
+### API Documentation & Testing
 
-1. **Navigate to the OpenAPI Generator directory:**
-   ```bash
-   cd openapi-generator
-   ```
-2. **Build the tool:**
-   ```bash
-   ./mvnw clean install -Dmaven.wagon.http.ssl.insecure=true
-   ```
-   - `maven.wagon.http.ssl.insecure=true` (Optional): Disables SSL certificate verification (use with caution).
+- **Swagger UI** (v4.x) - Interactive API documentation and testing interface
+- **Redocly CLI** (v1.25.8) - API documentation generation and linting
+- **RapiDoc** - Alternative API documentation viewer
 
-**Generating API Clients:**
+### Client Generation
 
-**1. JavaScript Client (Short Output):**
+- **@openapitools/openapi-generator-cli** (v2.15.3) - Main tool for generating API clients
+  - Supports multiple output formats including TypeScript, JavaScript, and TypeScript-Fetch
+  - Version 7.9.0 of the core generator is used (configured in openapitools.json)
 
-```bash
-clear && rm /mnt/c/Projects/Iside/fe-client/api-client-js & npx @openapitools/openapi-generator-cli generate --config ./openapi-generator-js.config.yaml | grep -E '(ERR|WARN|TemplateManager|[Oo]neOf|[Aa]llOf|Response|00)'
+### Client Types
+
+The project can generate several types of API clients:
+
+1. **TypeScript Fetch** (`gen:ts-fetch`)
+
+   - Modern fetch-based HTTP client
+   - Full TypeScript support with type definitions
+   - Built-in request/response type validation
+
+2. **TypeScript Axios** (`gen:ts`)
+
+   - Axios-based HTTP client
+   - Complete TypeScript type definitions
+   - Robust error handling
+
+3. **JavaScript** (`gen:js`)
+   - Pure JavaScript implementation
+   - Compatible with Node.js and browser environments
+
+### Alternative Generators
+
+Additional experimental generators are included:
+
+- **@hey-api/openapi-ts** - Alternative TypeScript client generator
+- **openapi-typescript** - TypeScript type generation
+
+## Prerequisites
+
+- Node.js
+- pnpm
+- OpenAPI Generator CLI
+
+## Available Scripts
+
+### Client Generation
+
+- `pnpm gen:ts-fetch` - Generate TypeScript Fetch client
+- `pnpm gen:ts` - Generate TypeScript client
+- `pnpm gen:js` - Generate JavaScript client
+- `pnpm gen:api` - Generate OpenAPI YAML
+- `pnpm gen:hei-api` - Generate client using @hey-api/openapi-ts
+- `pnpm gen:openapi-typescript` - Generate TypeScript types
+
+### Documentation
+
+- `pnpm redocly` - Generate API documentation using Redocly
+- `pnpm redocly:lint` - Lint OpenAPI specification
+- `pnpm swagger-run` - Run Swagger UI locally
+- `pnpm swagger-copy` - Sync API specifications from external source
+- `pnpm redocly:unified` - Generate unified documentation
+
+### Build
+
+- `pnpm build:tsfetch` - Build TypeScript Fetch client
+- `pnpm gen-build:tsfetch` - Generate and build TypeScript Fetch client
+- `pnpm gen-build:tsfetch:api:redocly` - Complete workflow: generate client, build, update API docs
+
+### Development Tools
+
+- `pnpm dependencies:madge` - Generate dependency graph
+- `pnpm openapitools:version:snap` - List available snapshot versions of openapi-generator-cli
+
+## Project Structure
+
+```
+├── clients/
+│   ├── ts-fetch/     # TypeScript Fetch client
+│   ├── openapi-ts/   # Alternative TypeScript client
+├── docs/
+│   ├── swagger-ui/   # Swagger UI documentation
+│   ├── rapidoc/      # RapiDoc documentation
+│   ├── redocly/      # Redocly generated documentation
+├── openapi/          # OpenAPI specifications
 ```
 
-- Fetches the OpenAPI Generator CLI using `npx`.
-- Generates the client using the configuration file `openapi-generator-js.config.yaml`.
-- Pipes the output through `grep` to filter for errors, warnings, or specific keywords.
-- Removes any previous generated client files (`/mnt/c/Projects/Iside/fe-client/api-client-js`).
+## Configuration Files
 
-**2. TypeScript Client with Fetch API (Short Output):**
+- `openapi-generator-tsfetch.config.yaml` - TypeScript Fetch client generation settings
 
-```bash
-clear && rm -r /mnt/c/Projects/Iside/fe-client/api-client-ts-fetch*
-java -jar ~/projects/_GH/_java/openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar generate --config /mnt/c/Projects/Iside/fe-client/openapi-generator-tsfetch.config.yaml | grep -E '(ERR|WARN|TemplateManager|[Oo]neOf|[Aa]llOf|Response|00)'
-```
+  - Configures NPM package details
+  - Sets model name mappings
+  - Defines generator options
 
-- Uses the Java-based OpenAPI Generator CLI (`java -jar`).
-- Generates the client using the configuration file `openapi-generator-tsfetch.config.yaml`.
-- Filters the output as in the previous command (JavaScript client).
-- Removes previous generated client files (`/mnt/c/Projects/Iside/fe-client/api-client-ts-fetch*`).
+- `redocly.yaml` - Redocly documentation configuration
 
-```bash
-cd fe-client
-clear && rm -r /mnt/c/Projects/Iside/fe-client/api-client-ts-fetch*
-# this command doesn\'t work
-npx @openapitools/openapi-generator-cli@latest generate --config ./openapi-generator-tsfetch.config.yaml
-```
+  - API version configuration
+  - Linting rules
+  - Documentation generation settings
 
-Once the package is built, the package is created IN POWERSHELL by:
+- `openapitools.json` - OpenAPI Generator CLI configuration
 
-```powershell
-# go in the package dir
-cd api-client-ts-fetch
-# update and install all packages
-pnpm update
-pnpm install
-# build the project
-pnpm build
-# create and copy the package
-pnpm pack --pack-destination ~\projects\iside && cp ~\projects\iside\iside-open-food-facts-api-client-tsfetch-*  C:\Projects\Iside\
-```
+  - Generator version control
+  - Global settings
 
-**3. Custom Client Generation:**
+- `pnpm-workspace.yaml` - Workspace configuration for monorepo structure
 
-- Follow the documentation in [https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/javascript.md](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/generators/javascript.md) to create custom configuration files.
-- Refer to the generated client structure for customization options.
+## API Synchronization
 
-**Certificate Installation in WSL2 (Optional):**
+The project uses a forked version of the OpenFoodFacts API specification. To update the local API definition:
 
-1. **Export the certificate in base64 CER format from Windows.**
-2. **Create the directory `/usr/local/share/ca-certificates/extra` in WSL2 if it doesn't exist.**
-3. **Rename the CER file to a CRT extension and copy it to `/usr/local/share/ca-certificates/extra` in WSL2.**
-4. **Update the certificate list:**
-   ```bash
-   sudo update-ca-certificates
-   ```
-   - If unsuccessful, try `sudo dpkg-reconfigure ca-certificates` followed by `sudo update-ca-certificates`.
+1. Run `pnpm swagger-copy` to sync from the external source
+2. Run `pnpm swagger-run` to start the Swagger UI and verify the updated specification
+3. Generate new clients using the appropriate generation commands
 
-**Polyfills and Browser Compatibility:**
+## License
 
-- Consider using polyfills to ensure compatibility with older browsers: [https://vitejs.dev/guide/build.html#browser-compatibility](https://vitejs.dev/guide/build.html#browser-compatibility)
-- Reference `browserlist` for detailed browser compatibility configuration: [https://dev.to/meduzen/when-vite-ignores-your-browserslist-configuration-3hoe](https://dev.to/meduzen/when-vite-ignores-your-browserslist-configuration-3hoe)
+ISC
 
-**Scanners:**
+## Author
 
-- Explore these scanner libraries for barcode scanning functionality:
-  - [https://github.com/zxing-js/library](https://github.com/zxing-js/library)
-  - [https://github.com/serratus](https://github.com/serratus)
+LdP

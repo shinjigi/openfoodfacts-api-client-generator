@@ -1,5 +1,5 @@
 {
-  "name": "@iside/ac-open-food-facts-clients",
+  "name": "open-food-facts-clients",
   "version": "2.1.0",
   "description": "client generation for openfoodfact",
   "main": "index.js",
