@@ -92,6 +92,9 @@ class ProductMetadata {
             if (data.hasOwnProperty('last_modified_t')) {
                 obj['last_modified_t'] = ApiClient.convertToType(data['last_modified_t'], 'Number');
             }
+            if (data.hasOwnProperty('last_updated_t')) {
+                obj['last_updated_t'] = ApiClient.convertToType(data['last_updated_t'], 'Number');
+            }
             if (data.hasOwnProperty('owner')) {
                 obj['owner'] = ApiClient.convertToType(data['owner'], 'String');
             }
@@ -291,6 +294,12 @@ ProductMetadata.prototype['last_modified_by'] = undefined;
  * @member {Number} last_modified_t
  */
 ProductMetadata.prototype['last_modified_t'] = undefined;
+
+/**
+ * Date when the product page was last updated. 
+ * @member {Number} last_updated_t
+ */
+ProductMetadata.prototype['last_updated_t'] = undefined;
 
 /**
  * Id of the producer in case he provides his own data about a product (producer platform). 

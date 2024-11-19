@@ -79,6 +79,7 @@ Name | Type | Description | Notes
 **sodium** | **Number** |  | [optional] 
 **sugars** | **Number** |  | [optional] 
 **fiber** | **Number** |  | [optional] 
+**carbon_footprint_from_known_ingredients_100g** | **Number** |  | [optional] 
 **carbon_footprint_from_known_ingredients_product** | **Number** |  | [optional] 
 **carbon_footprint_from_known_ingredients_serving** | **Number** |  | [optional] 
 **erythritol** | **Number** | erythritol is a polyol which is not providing any energy. As such, it needs not be taken into account when computing the energy of a product. Eryhtritol is now displayed on nutrition facts sheet of some products, mainly in the USA. This value is entered either by contributors, either by imports.  | [optional] 

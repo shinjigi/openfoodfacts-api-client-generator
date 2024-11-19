@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **last_editor** | **String** |  | [optional] 
 **last_modified_by** | **String** | The username of the user who last modified the product.  | [optional] 
 **last_modified_t** | **Number** | Date when the product page was last modified.  | [optional] 
+**last_updated_t** | **Number** | Date when the product page was last updated.  | [optional] 
 **owner** | **String** | Id of the producer in case he provides his own data about a product (producer platform).  | [optional] 
 **owners_tags** | **String** | Tagyfied version of owner  | [optional] 
 **photographers_tags** | **[String]** |  | [optional] 

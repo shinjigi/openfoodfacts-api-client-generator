@@ -75,6 +75,9 @@ class Ingredient {
             if (data.hasOwnProperty('percent_estimate')) {
                 obj['percent_estimate'] = ApiClient.convertToType(data['percent_estimate'], 'Number');
             }
+            if (data.hasOwnProperty('processing')) {
+                obj['processing'] = ApiClient.convertToType(data['processing'], 'String');
+            }
             if (data.hasOwnProperty('percent_max')) {
                 obj['percent_max'] = ProductIngredientsPercentMax.constructFromObject(data['percent_max']);
             }
@@ -129,6 +132,10 @@ class Ingredient {
             for (const item of data['ingredients']) {
                 Ingredient.validateJSON(item);
             };
+        }
+        // ensure the json data is a string
+        if (data['processing'] && !(typeof data['processing'] === 'string' || data['processing'] instanceof String)) {
+            throw new Error("Expected the field `processing` to be a primitive type in the JSON string but got " + data['processing']);
         }
         // validate the optional field `percent_max`
         if (data['percent_max']) { // data not null
@@ -202,6 +209,12 @@ Ingredient.prototype['is_in_taxonomy'] = undefined;
  * @member {Number} percent_estimate
  */
 Ingredient.prototype['percent_estimate'] = undefined;
+
+/**
+ * A textual description of the processing applied to the ingredient.  This can include methods like roasting, frying, fermenting, or other techniques. 
+ * @member {String} processing
+ */
+Ingredient.prototype['processing'] = undefined;
 
 /**
  * @member {module:model/ProductIngredientsPercentMax} percent_max

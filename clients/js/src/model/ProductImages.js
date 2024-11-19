@@ -59,6 +59,24 @@ class ProductImages {
             if (data.hasOwnProperty('image_front_url')) {
                 obj['image_front_url'] = ApiClient.convertToType(data['image_front_url'], 'String');
             }
+            if (data.hasOwnProperty('image_ingredients_small_url')) {
+                obj['image_ingredients_small_url'] = ApiClient.convertToType(data['image_ingredients_small_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_ingredients_thumb_url')) {
+                obj['image_ingredients_thumb_url'] = ApiClient.convertToType(data['image_ingredients_thumb_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_ingredients_url')) {
+                obj['image_ingredients_url'] = ApiClient.convertToType(data['image_ingredients_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_packaging_small_url')) {
+                obj['image_packaging_small_url'] = ApiClient.convertToType(data['image_packaging_small_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_packaging_thumb_url')) {
+                obj['image_packaging_thumb_url'] = ApiClient.convertToType(data['image_packaging_thumb_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_packaging_url')) {
+                obj['image_packaging_url'] = ApiClient.convertToType(data['image_packaging_url'], 'String');
+            }
             if (data.hasOwnProperty('image_nutrition_small_url')) {
                 obj['image_nutrition_small_url'] = ApiClient.convertToType(data['image_nutrition_small_url'], 'String');
             }
@@ -110,6 +128,30 @@ class ProductImages {
         // ensure the json data is a string
         if (data['image_front_url'] && !(typeof data['image_front_url'] === 'string' || data['image_front_url'] instanceof String)) {
             throw new Error("Expected the field `image_front_url` to be a primitive type in the JSON string but got " + data['image_front_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_ingredients_small_url'] && !(typeof data['image_ingredients_small_url'] === 'string' || data['image_ingredients_small_url'] instanceof String)) {
+            throw new Error("Expected the field `image_ingredients_small_url` to be a primitive type in the JSON string but got " + data['image_ingredients_small_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_ingredients_thumb_url'] && !(typeof data['image_ingredients_thumb_url'] === 'string' || data['image_ingredients_thumb_url'] instanceof String)) {
+            throw new Error("Expected the field `image_ingredients_thumb_url` to be a primitive type in the JSON string but got " + data['image_ingredients_thumb_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_ingredients_url'] && !(typeof data['image_ingredients_url'] === 'string' || data['image_ingredients_url'] instanceof String)) {
+            throw new Error("Expected the field `image_ingredients_url` to be a primitive type in the JSON string but got " + data['image_ingredients_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_packaging_small_url'] && !(typeof data['image_packaging_small_url'] === 'string' || data['image_packaging_small_url'] instanceof String)) {
+            throw new Error("Expected the field `image_packaging_small_url` to be a primitive type in the JSON string but got " + data['image_packaging_small_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_packaging_thumb_url'] && !(typeof data['image_packaging_thumb_url'] === 'string' || data['image_packaging_thumb_url'] instanceof String)) {
+            throw new Error("Expected the field `image_packaging_thumb_url` to be a primitive type in the JSON string but got " + data['image_packaging_thumb_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_packaging_url'] && !(typeof data['image_packaging_url'] === 'string' || data['image_packaging_url'] instanceof String)) {
+            throw new Error("Expected the field `image_packaging_url` to be a primitive type in the JSON string but got " + data['image_packaging_url']);
         }
         // ensure the json data is a string
         if (data['image_nutrition_small_url'] && !(typeof data['image_nutrition_small_url'] === 'string' || data['image_nutrition_small_url'] instanceof String)) {
@@ -166,6 +208,36 @@ ProductImages.prototype['image_front_thumb_url'] = undefined;
  * @member {String} image_front_url
  */
 ProductImages.prototype['image_front_url'] = undefined;
+
+/**
+ * @member {String} image_ingredients_small_url
+ */
+ProductImages.prototype['image_ingredients_small_url'] = undefined;
+
+/**
+ * @member {String} image_ingredients_thumb_url
+ */
+ProductImages.prototype['image_ingredients_thumb_url'] = undefined;
+
+/**
+ * @member {String} image_ingredients_url
+ */
+ProductImages.prototype['image_ingredients_url'] = undefined;
+
+/**
+ * @member {String} image_packaging_small_url
+ */
+ProductImages.prototype['image_packaging_small_url'] = undefined;
+
+/**
+ * @member {String} image_packaging_thumb_url
+ */
+ProductImages.prototype['image_packaging_thumb_url'] = undefined;
+
+/**
+ * @member {String} image_packaging_url
+ */
+ProductImages.prototype['image_packaging_url'] = undefined;
 
 /**
  * @member {String} image_nutrition_small_url

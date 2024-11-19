@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **percent** | **Number** | The percentage of the ingredient. | [optional] 
 **is_in_taxonomy** | **Number** |  | [optional] 
 **percent_estimate** | **Number** | Estimated percentage of the ingredient. | [optional] 
+**processing** | **String** | A textual description of the processing applied to the ingredient.  This can include methods like roasting, frying, fermenting, or other techniques.  | [optional] 
 **percent_max** | [**ProductIngredientsPercentMax**](ProductIngredientsPercentMax.md) |  | [optional] 
 **percent_min** | **Number** | Minimum percentage of the ingredient. | [optional] 
 **text** | **String** | Text description of the ingredient. | [optional] 

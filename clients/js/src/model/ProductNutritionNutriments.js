@@ -273,6 +273,9 @@ class ProductNutritionNutriments {
             if (data.hasOwnProperty('fiber')) {
                 obj['fiber'] = ApiClient.convertToType(data['fiber'], 'Number');
             }
+            if (data.hasOwnProperty('carbon-footprint-from-known-ingredients_100g')) {
+                obj['carbon-footprint-from-known-ingredients_100g'] = ApiClient.convertToType(data['carbon-footprint-from-known-ingredients_100g'], 'Number');
+            }
             if (data.hasOwnProperty('carbon-footprint-from-known-ingredients_product')) {
                 obj['carbon-footprint-from-known-ingredients_product'] = ApiClient.convertToType(data['carbon-footprint-from-known-ingredients_product'], 'Number');
             }
@@ -735,6 +738,11 @@ ProductNutritionNutriments.prototype['sugars'] = undefined;
  * @member {Number} fiber
  */
 ProductNutritionNutriments.prototype['fiber'] = undefined;
+
+/**
+ * @member {Number} carbon-footprint-from-known-ingredients_100g
+ */
+ProductNutritionNutriments.prototype['carbon-footprint-from-known-ingredients_100g'] = undefined;
 
 /**
  * @member {Number} carbon-footprint-from-known-ingredients_product

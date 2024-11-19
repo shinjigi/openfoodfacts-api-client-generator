@@ -185,6 +185,9 @@ class Product {
             if (data.hasOwnProperty('unique_scans_n')) {
                 obj['unique_scans_n'] = ApiClient.convertToType(data['unique_scans_n'], 'Number');
             }
+            if (data.hasOwnProperty('sortkey')) {
+                obj['sortkey'] = ApiClient.convertToType(data['sortkey'], 'Number');
+            }
             if (data.hasOwnProperty('serving_quantity')) {
                 obj['serving_quantity'] = ApiClient.convertToType(data['serving_quantity'], 'String');
             }
@@ -289,6 +292,24 @@ class Product {
             }
             if (data.hasOwnProperty('image_front_url')) {
                 obj['image_front_url'] = ApiClient.convertToType(data['image_front_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_ingredients_small_url')) {
+                obj['image_ingredients_small_url'] = ApiClient.convertToType(data['image_ingredients_small_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_ingredients_thumb_url')) {
+                obj['image_ingredients_thumb_url'] = ApiClient.convertToType(data['image_ingredients_thumb_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_ingredients_url')) {
+                obj['image_ingredients_url'] = ApiClient.convertToType(data['image_ingredients_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_packaging_small_url')) {
+                obj['image_packaging_small_url'] = ApiClient.convertToType(data['image_packaging_small_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_packaging_thumb_url')) {
+                obj['image_packaging_thumb_url'] = ApiClient.convertToType(data['image_packaging_thumb_url'], 'String');
+            }
+            if (data.hasOwnProperty('image_packaging_url')) {
+                obj['image_packaging_url'] = ApiClient.convertToType(data['image_packaging_url'], 'String');
             }
             if (data.hasOwnProperty('image_nutrition_small_url')) {
                 obj['image_nutrition_small_url'] = ApiClient.convertToType(data['image_nutrition_small_url'], 'String');
@@ -482,6 +503,12 @@ class Product {
             if (data.hasOwnProperty('nutrition_score_beverage')) {
                 obj['nutrition_score_beverage'] = ApiClient.convertToType(data['nutrition_score_beverage'], 'Number');
             }
+            if (data.hasOwnProperty('nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients')) {
+                obj['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients'] = ApiClient.convertToType(data['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients'], 'Number');
+            }
+            if (data.hasOwnProperty('nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value')) {
+                obj['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value'] = ApiClient.convertToType(data['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value'], 'Number');
+            }
             if (data.hasOwnProperty('nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients')) {
                 obj['nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients'] = ApiClient.convertToType(data['nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients'], 'Number');
             }
@@ -535,6 +562,9 @@ class Product {
             }
             if (data.hasOwnProperty('data_quality_tags')) {
                 obj['data_quality_tags'] = ApiClient.convertToType(data['data_quality_tags'], ['String']);
+            }
+            if (data.hasOwnProperty('data_quality_warning_tags')) {
+                obj['data_quality_warning_tags'] = ApiClient.convertToType(data['data_quality_warning_tags'], ['String']);
             }
             if (data.hasOwnProperty('data_quality_warnings_tags')) {
                 obj['data_quality_warnings_tags'] = ApiClient.convertToType(data['data_quality_warnings_tags'], ['String']);
@@ -700,6 +730,9 @@ class Product {
             }
             if (data.hasOwnProperty('last_modified_t')) {
                 obj['last_modified_t'] = ApiClient.convertToType(data['last_modified_t'], 'Number');
+            }
+            if (data.hasOwnProperty('last_updated_t')) {
+                obj['last_updated_t'] = ApiClient.convertToType(data['last_updated_t'], 'Number');
             }
             if (data.hasOwnProperty('owner')) {
                 obj['owner'] = ApiClient.convertToType(data['owner'], 'String');
@@ -1015,6 +1048,30 @@ class Product {
             throw new Error("Expected the field `image_front_url` to be a primitive type in the JSON string but got " + data['image_front_url']);
         }
         // ensure the json data is a string
+        if (data['image_ingredients_small_url'] && !(typeof data['image_ingredients_small_url'] === 'string' || data['image_ingredients_small_url'] instanceof String)) {
+            throw new Error("Expected the field `image_ingredients_small_url` to be a primitive type in the JSON string but got " + data['image_ingredients_small_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_ingredients_thumb_url'] && !(typeof data['image_ingredients_thumb_url'] === 'string' || data['image_ingredients_thumb_url'] instanceof String)) {
+            throw new Error("Expected the field `image_ingredients_thumb_url` to be a primitive type in the JSON string but got " + data['image_ingredients_thumb_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_ingredients_url'] && !(typeof data['image_ingredients_url'] === 'string' || data['image_ingredients_url'] instanceof String)) {
+            throw new Error("Expected the field `image_ingredients_url` to be a primitive type in the JSON string but got " + data['image_ingredients_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_packaging_small_url'] && !(typeof data['image_packaging_small_url'] === 'string' || data['image_packaging_small_url'] instanceof String)) {
+            throw new Error("Expected the field `image_packaging_small_url` to be a primitive type in the JSON string but got " + data['image_packaging_small_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_packaging_thumb_url'] && !(typeof data['image_packaging_thumb_url'] === 'string' || data['image_packaging_thumb_url'] instanceof String)) {
+            throw new Error("Expected the field `image_packaging_thumb_url` to be a primitive type in the JSON string but got " + data['image_packaging_thumb_url']);
+        }
+        // ensure the json data is a string
+        if (data['image_packaging_url'] && !(typeof data['image_packaging_url'] === 'string' || data['image_packaging_url'] instanceof String)) {
+            throw new Error("Expected the field `image_packaging_url` to be a primitive type in the JSON string but got " + data['image_packaging_url']);
+        }
+        // ensure the json data is a string
         if (data['image_nutrition_small_url'] && !(typeof data['image_nutrition_small_url'] === 'string' || data['image_nutrition_small_url'] instanceof String)) {
             throw new Error("Expected the field `image_nutrition_small_url` to be a primitive type in the JSON string but got " + data['image_nutrition_small_url']);
         }
@@ -1275,6 +1332,10 @@ class Product {
         // ensure the json data is an array
         if (!Array.isArray(data['data_quality_tags'])) {
             throw new Error("Expected the field `data_quality_tags` to be an array in the JSON data but got " + data['data_quality_tags']);
+        }
+        // ensure the json data is an array
+        if (!Array.isArray(data['data_quality_warning_tags'])) {
+            throw new Error("Expected the field `data_quality_warning_tags` to be an array in the JSON data but got " + data['data_quality_warning_tags']);
         }
         // ensure the json data is an array
         if (!Array.isArray(data['data_quality_warnings_tags'])) {
@@ -1751,6 +1812,11 @@ Product.prototype['scans_n'] = undefined;
 Product.prototype['unique_scans_n'] = undefined;
 
 /**
+ * @member {Number} sortkey
+ */
+Product.prototype['sortkey'] = undefined;
+
+/**
  * Normalized version of serving_size. Note that this is NOT the number of servings by product. <small>(in perl, see `normalize_serving_size`)</small> 
  * @member {String} serving_quantity
  */
@@ -1935,6 +2001,36 @@ Product.prototype['image_front_thumb_url'] = undefined;
  * @member {String} image_front_url
  */
 Product.prototype['image_front_url'] = undefined;
+
+/**
+ * @member {String} image_ingredients_small_url
+ */
+Product.prototype['image_ingredients_small_url'] = undefined;
+
+/**
+ * @member {String} image_ingredients_thumb_url
+ */
+Product.prototype['image_ingredients_thumb_url'] = undefined;
+
+/**
+ * @member {String} image_ingredients_url
+ */
+Product.prototype['image_ingredients_url'] = undefined;
+
+/**
+ * @member {String} image_packaging_small_url
+ */
+Product.prototype['image_packaging_small_url'] = undefined;
+
+/**
+ * @member {String} image_packaging_thumb_url
+ */
+Product.prototype['image_packaging_thumb_url'] = undefined;
+
+/**
+ * @member {String} image_packaging_url
+ */
+Product.prototype['image_packaging_url'] = undefined;
 
 /**
  * @member {String} image_nutrition_small_url
@@ -2275,6 +2371,16 @@ Product.prototype['nutrition_grades_tags'] = undefined;
 Product.prototype['nutrition_score_beverage'] = undefined;
 
 /**
+ * @member {Number} nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients
+ */
+Product.prototype['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients'] = undefined;
+
+/**
+ * @member {Number} nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value
+ */
+Product.prototype['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value'] = undefined;
+
+/**
  * @member {Number} nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients
  */
 Product.prototype['nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients'] = undefined;
@@ -2365,6 +2471,11 @@ Product.prototype['data_quality_info_tags'] = undefined;
  * @member {Array.<String>} data_quality_tags
  */
 Product.prototype['data_quality_tags'] = undefined;
+
+/**
+ * @member {Array.<String>} data_quality_warning_tags
+ */
+Product.prototype['data_quality_warning_tags'] = undefined;
 
 /**
  * @member {Array.<String>} data_quality_warnings_tags
@@ -2655,6 +2766,12 @@ Product.prototype['last_modified_by'] = undefined;
  * @member {Number} last_modified_t
  */
 Product.prototype['last_modified_t'] = undefined;
+
+/**
+ * Date when the product page was last updated. 
+ * @member {Number} last_updated_t
+ */
+Product.prototype['last_updated_t'] = undefined;
 
 /**
  * Id of the producer in case he provides his own data about a product (producer platform). 

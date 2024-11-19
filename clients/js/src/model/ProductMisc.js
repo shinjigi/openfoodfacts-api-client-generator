@@ -110,6 +110,9 @@ class ProductMisc {
             if (data.hasOwnProperty('unique_scans_n')) {
                 obj['unique_scans_n'] = ApiClient.convertToType(data['unique_scans_n'], 'Number');
             }
+            if (data.hasOwnProperty('sortkey')) {
+                obj['sortkey'] = ApiClient.convertToType(data['sortkey'], 'Number');
+            }
             if (data.hasOwnProperty('serving_quantity')) {
                 obj['serving_quantity'] = ApiClient.convertToType(data['serving_quantity'], 'String');
             }
@@ -313,6 +316,11 @@ ProductMisc.prototype['scans_n'] = undefined;
  * @member {Number} unique_scans_n
  */
 ProductMisc.prototype['unique_scans_n'] = undefined;
+
+/**
+ * @member {Number} sortkey
+ */
+ProductMisc.prototype['sortkey'] = undefined;
 
 /**
  * Normalized version of serving_size. Note that this is NOT the number of servings by product. <small>(in perl, see `normalize_serving_size`)</small> 

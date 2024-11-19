@@ -13,6 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
+import SearchForProductsResponse from '../model/SearchForProductsResponse';
 import UnselectAPhotoResponse from '../model/UnselectAPhotoResponse';
 
 /**
@@ -72,6 +73,184 @@ export default class AuxiliaryOperationsApi {
       let returnType = UnselectAPhotoResponse;
       return this.apiClient.callApi(
         '/cgi/product_image_unselect.pl', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the searchV1ProductsGet operation.
+     * @callback module:api/AuxiliaryOperationsApi~searchV1ProductsGetCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/SearchForProductsResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Search products with filters (GET)
+     * Search products with filters (GET)
+     * @param {Object} opts Optional parameters
+     * @param {String} [search_terms] Text search terms
+     * @param {Number} [page = 1)] 
+     * @param {Number} [page_size = 24)] 
+     * @param {module:model/Number} [json] 
+     * @param {String} [fields] 
+     * @param {module:model/String} [sort_by] 
+     * @param {String} [states_tags] 
+     * @param {String} [brands_tags] 
+     * @param {String} [categories_tags] 
+     * @param {String} [labels_tags] 
+     * @param {String} [packaging_tags] 
+     * @param {String} [purchase_places_tags] 
+     * @param {String} [stores_tags] 
+     * @param {String} [countries_tags] 
+     * @param {String} [ingredients_tags] 
+     * @param {String} [trace_tags] 
+     * @param {module:api/AuxiliaryOperationsApi~searchV1ProductsGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/SearchForProductsResponse}
+     */
+    searchV1ProductsGet(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'search_terms': opts['search_terms'],
+        'page': opts['page'],
+        'page_size': opts['page_size'],
+        'json': opts['json'],
+        'fields': opts['fields'],
+        'sort_by': opts['sort_by'],
+        'states_tags': opts['states_tags'],
+        'brands_tags': opts['brands_tags'],
+        'categories_tags': opts['categories_tags'],
+        'labels_tags': opts['labels_tags'],
+        'packaging_tags': opts['packaging_tags'],
+        'purchase_places_tags': opts['purchase_places_tags'],
+        'stores_tags': opts['stores_tags'],
+        'countries_tags': opts['countries_tags'],
+        'ingredients_tags': opts['ingredients_tags'],
+        'trace_tags': opts['trace_tags']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = [];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = SearchForProductsResponse;
+      return this.apiClient.callApi(
+        '/cgi/search.pl', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the searchV1ProductsPost operation.
+     * @callback module:api/AuxiliaryOperationsApi~searchV1ProductsPostCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/SearchForProductsResponse} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Search products with filters (POST)
+     * Search products with filters (POST)
+     * @param {module:model/String} action 
+     * @param {module:model/String} sort_by 
+     * @param {Number} page_size 
+     * @param {Object} opts Optional parameters
+     * @param {module:model/Number} [search_simple] 
+     * @param {String} [search_terms2] Search for words present in the product name, generic name, brands, categories, origins and labels
+     * @param {module:model/String} [tagtype_0] First criteria type
+     * @param {module:model/String} [tag_contains_0] First criteria condition
+     * @param {String} [tag_0] First criteria value
+     * @param {module:model/String} [tagtype_1] First criteria type
+     * @param {module:model/String} [tag_contains_1] Second criteria condition
+     * @param {String} [tag_1] Second criteria value
+     * @param {module:model/String} [additives = 'indifferent')] Filter by presence of additives
+     * @param {module:model/String} [ingredients_from_palm_oil = 'indifferent')] Filter by ingredients from palm oil
+     * @param {module:model/String} [ingredients_that_may_be_from_palm_oil = 'indifferent')] Filter by ingredients that may be from palm oil
+     * @param {module:model/String} [ingredients_from_or_that_may_be_from_palm_oil = 'indifferent')] Filter by ingredients from or that may be from palm oil
+     * @param {String} [nutriment_0] 
+     * @param {module:model/String} [nutriment_compare_0] 
+     * @param {String} [nutriment_value_0] 
+     * @param {String} [nutriment_1] 
+     * @param {module:model/String} [nutriment_compare_1] 
+     * @param {String} [nutriment_value_1] 
+     * @param {String} [graph_title] 
+     * @param {String} [axis_x] 
+     * @param {String} [axis_y] 
+     * @param {String} [map_title] 
+     * @param {Number} [page = 1)] 
+     * @param {module:model/Number} [json = 1)] 
+     * @param {String} [fields] 
+     * @param {module:api/AuxiliaryOperationsApi~searchV1ProductsPostCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/SearchForProductsResponse}
+     */
+    searchV1ProductsPost(action, sort_by, page_size, opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'action' is set
+      if (action === undefined || action === null) {
+        throw new Error("Missing the required parameter 'action' when calling searchV1ProductsPost");
+      }
+      // verify the required parameter 'sort_by' is set
+      if (sort_by === undefined || sort_by === null) {
+        throw new Error("Missing the required parameter 'sort_by' when calling searchV1ProductsPost");
+      }
+      // verify the required parameter 'page_size' is set
+      if (page_size === undefined || page_size === null) {
+        throw new Error("Missing the required parameter 'page_size' when calling searchV1ProductsPost");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+        'search_simple': opts['search_simple'],
+        'search_terms2': opts['search_terms2'],
+        'tagtype_0': opts['tagtype_0'],
+        'tag_contains_0': opts['tag_contains_0'],
+        'tag_0': opts['tag_0'],
+        'tagtype_1': opts['tagtype_1'],
+        'tag_contains_1': opts['tag_contains_1'],
+        'tag_1': opts['tag_1'],
+        'additives': opts['additives'],
+        'ingredients_from_palm_oil': opts['ingredients_from_palm_oil'],
+        'ingredients_that_may_be_from_palm_oil': opts['ingredients_that_may_be_from_palm_oil'],
+        'ingredients_from_or_that_may_be_from_palm_oil': opts['ingredients_from_or_that_may_be_from_palm_oil'],
+        'nutriment_0': opts['nutriment_0'],
+        'nutriment_compare_0': opts['nutriment_compare_0'],
+        'nutriment_value_0': opts['nutriment_value_0'],
+        'nutriment_1': opts['nutriment_1'],
+        'nutriment_compare_1': opts['nutriment_compare_1'],
+        'nutriment_value_1': opts['nutriment_value_1'],
+        'graph_title': opts['graph_title'],
+        'axis_x': opts['axis_x'],
+        'axis_y': opts['axis_y'],
+        'map_title': opts['map_title'],
+        'action': action,
+        'sort_by': sort_by,
+        'page': opts['page'],
+        'page_size': page_size,
+        'json': opts['json'],
+        'fields': opts['fields']
+      };
+
+      let authNames = [];
+      let contentTypes = ['multipart/form-data'];
+      let accepts = ['application/json'];
+      let returnType = SearchForProductsResponse;
+      return this.apiClient.callApi(
+        '/cgi/search.pl', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

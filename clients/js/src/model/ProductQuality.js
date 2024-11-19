@@ -60,6 +60,9 @@ class ProductQuality {
             if (data.hasOwnProperty('data_quality_tags')) {
                 obj['data_quality_tags'] = ApiClient.convertToType(data['data_quality_tags'], ['String']);
             }
+            if (data.hasOwnProperty('data_quality_warning_tags')) {
+                obj['data_quality_warning_tags'] = ApiClient.convertToType(data['data_quality_warning_tags'], ['String']);
+            }
             if (data.hasOwnProperty('data_quality_warnings_tags')) {
                 obj['data_quality_warnings_tags'] = ApiClient.convertToType(data['data_quality_warnings_tags'], ['String']);
             }
@@ -118,6 +121,10 @@ class ProductQuality {
         // ensure the json data is an array
         if (!Array.isArray(data['data_quality_tags'])) {
             throw new Error("Expected the field `data_quality_tags` to be an array in the JSON data but got " + data['data_quality_tags']);
+        }
+        // ensure the json data is an array
+        if (!Array.isArray(data['data_quality_warning_tags'])) {
+            throw new Error("Expected the field `data_quality_warning_tags` to be an array in the JSON data but got " + data['data_quality_warning_tags']);
         }
         // ensure the json data is an array
         if (!Array.isArray(data['data_quality_warnings_tags'])) {
@@ -187,6 +194,11 @@ ProductQuality.prototype['data_quality_info_tags'] = undefined;
  * @member {Array.<String>} data_quality_tags
  */
 ProductQuality.prototype['data_quality_tags'] = undefined;
+
+/**
+ * @member {Array.<String>} data_quality_warning_tags
+ */
+ProductQuality.prototype['data_quality_warning_tags'] = undefined;
 
 /**
  * @member {Array.<String>} data_quality_warnings_tags

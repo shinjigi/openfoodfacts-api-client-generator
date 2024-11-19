@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **data_quality_errors_tags** | **[Object]** |  | [optional] 
 **data_quality_info_tags** | **[String]** |  | [optional] 
 **data_quality_tags** | **[String]** |  | [optional] 
+**data_quality_warning_tags** | **[String]** |  | [optional] 
 **data_quality_warnings_tags** | **[String]** |  | [optional] 
 **data_sources** | **String** | Source of data imported from producers.  | [optional] 
 **data_sources_tags** | **[String]** |  | [optional] 

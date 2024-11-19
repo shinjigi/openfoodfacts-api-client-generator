@@ -77,6 +77,12 @@ class ProductNutrition {
             if (data.hasOwnProperty('nutrition_score_beverage')) {
                 obj['nutrition_score_beverage'] = ApiClient.convertToType(data['nutrition_score_beverage'], 'Number');
             }
+            if (data.hasOwnProperty('nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients')) {
+                obj['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients'] = ApiClient.convertToType(data['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients'], 'Number');
+            }
+            if (data.hasOwnProperty('nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value')) {
+                obj['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value'] = ApiClient.convertToType(data['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value'], 'Number');
+            }
             if (data.hasOwnProperty('nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients')) {
                 obj['nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients'] = ApiClient.convertToType(data['nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients'], 'Number');
             }
@@ -207,6 +213,16 @@ ProductNutrition.prototype['nutrition_grades_tags'] = undefined;
  * @member {Number} nutrition_score_beverage
  */
 ProductNutrition.prototype['nutrition_score_beverage'] = undefined;
+
+/**
+ * @member {Number} nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients
+ */
+ProductNutrition.prototype['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients'] = undefined;
+
+/**
+ * @member {Number} nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value
+ */
+ProductNutrition.prototype['nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value'] = undefined;
 
 /**
  * @member {Number} nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients

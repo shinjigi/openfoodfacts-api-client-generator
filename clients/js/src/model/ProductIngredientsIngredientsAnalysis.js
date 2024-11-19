@@ -47,6 +47,12 @@ class ProductIngredientsIngredientsAnalysis {
         if (data) {
             obj = obj || new ProductIngredientsIngredientsAnalysis();
 
+            if (data.hasOwnProperty('en:non-vegan')) {
+                obj['en:non-vegan'] = ApiClient.convertToType(data['en:non-vegan'], ['String']);
+            }
+            if (data.hasOwnProperty('en:palm-oil-content-unknown')) {
+                obj['en:palm-oil-content-unknown'] = ApiClient.convertToType(data['en:palm-oil-content-unknown'], ['String']);
+            }
             if (data.hasOwnProperty('en:palm-oil')) {
                 obj['en:palm-oil'] = ApiClient.convertToType(data['en:palm-oil'], ['String']);
             }
@@ -72,6 +78,14 @@ class ProductIngredientsIngredientsAnalysis {
      * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ProductIngredientsIngredientsAnalysis</code>.
      */
     static validateJSON(data) {
+        // ensure the json data is an array
+        if (!Array.isArray(data['en:non-vegan'])) {
+            throw new Error("Expected the field `en:non-vegan` to be an array in the JSON data but got " + data['en:non-vegan']);
+        }
+        // ensure the json data is an array
+        if (!Array.isArray(data['en:palm-oil-content-unknown'])) {
+            throw new Error("Expected the field `en:palm-oil-content-unknown` to be an array in the JSON data but got " + data['en:palm-oil-content-unknown']);
+        }
         // ensure the json data is an array
         if (!Array.isArray(data['en:palm-oil'])) {
             throw new Error("Expected the field `en:palm-oil` to be an array in the JSON data but got " + data['en:palm-oil']);
@@ -100,6 +114,16 @@ class ProductIngredientsIngredientsAnalysis {
 }
 
 
+
+/**
+ * @member {Array.<String>} en:non-vegan
+ */
+ProductIngredientsIngredientsAnalysis.prototype['en:non-vegan'] = undefined;
+
+/**
+ * @member {Array.<String>} en:palm-oil-content-unknown
+ */
+ProductIngredientsIngredientsAnalysis.prototype['en:palm-oil-content-unknown'] = undefined;
 
 /**
  * @member {Array.<String>} en:palm-oil

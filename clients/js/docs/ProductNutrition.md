@@ -13,6 +13,8 @@ Name | Type | Description | Notes
 **nutrition_grades** | **String** | Nutrition grades as a comma separated list.  Some products with multiple components might have multiple Nutri-Score  | [optional] 
 **nutrition_grades_tags** | **[String]** |  | [optional] 
 **nutrition_score_beverage** | **Number** |  | [optional] 
+**nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients** | **Number** |  | [optional] 
+**nutrition_score_warning_fruits_vegetables_legumes_estimate_from_ingredients_value** | **Number** |  | [optional] 
 **nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients** | **Number** |  | [optional] 
 **nutrition_score_warning_fruits_vegetables_nuts_estimate_from_ingredients_value** | **Number** |  | [optional] 
 **nutrition_score_warning_no_fiber** | **Number** |  | [optional] 

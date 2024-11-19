@@ -24,6 +24,7 @@ Name | Type | Description | Notes
 **popularity_tags** | **[String]** | Indicators for the popularity of a product, like the amount of scans in a specific year.  | [optional] 
 **scans_n** | **Number** |  | [optional] 
 **unique_scans_n** | **Number** |  | [optional] 
+**sortkey** | **Number** |  | [optional] 
 **serving_quantity** | **String** | Normalized version of serving_size. Note that this is NOT the number of servings by product. &lt;small&gt;(in perl, see &#x60;normalize_serving_size&#x60;)&lt;/small&gt;  | [optional] 
 **serving_quantity_unit** | **String** | The unit (either g or ml) for the correponding serving_quantity.  | [optional] 
 **serving_size** | **String** | Serving size text (generally in g or ml). We expect a quantity + unit but the user is free to input any string.  | [optional] 

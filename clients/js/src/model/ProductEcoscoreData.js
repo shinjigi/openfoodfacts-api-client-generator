@@ -73,6 +73,9 @@ class ProductEcoscoreData {
             if (data.hasOwnProperty('missing_data_warning')) {
                 obj['missing_data_warning'] = ApiClient.convertToType(data['missing_data_warning'], 'Number');
             }
+            if (data.hasOwnProperty('missing_key_data')) {
+                obj['missing_key_data'] = ApiClient.convertToType(data['missing_key_data'], 'Number');
+            }
             if (data.hasOwnProperty('previous_data')) {
                 obj['previous_data'] = ProductEcoscoreDataPreviousData.constructFromObject(data['previous_data']);
             }
@@ -166,6 +169,11 @@ ProductEcoscoreData.prototype['missing'] = undefined;
  * @member {Number} missing_data_warning
  */
 ProductEcoscoreData.prototype['missing_data_warning'] = undefined;
+
+/**
+ * @member {Number} missing_key_data
+ */
+ProductEcoscoreData.prototype['missing_key_data'] = undefined;
 
 /**
  * @member {module:model/ProductEcoscoreDataPreviousData} previous_data
