@@ -118,9 +118,6 @@ dist
 # pnpm 
 .npm-cache
 
-packages/ac-food-pwa/.cert/ac-food-pwa*.pem
-packages/ac-food-pwa/dev-dist
-packages/ac-food-pwa-init
-packages/ac-ts-t1
+docs/swagger-ui/node_modules
 docs/LoginApplicationActions.docx
 docs/_others
