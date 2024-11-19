@@ -1,6 +1,3 @@
-npm info using npm@10.8.2
-npm info using node@v20.18.0
-npm http fetch GET 200 https://registry.npmjs.org/openapi-typescript 206ms (cache revalidated)
  ⚠  Server `url` should not point to example.com or localhost.
  ⚠  Operation must have at least one `4XX` response.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `added_countries_tags`.
@@ -421,7 +418,6 @@ npm http fetch GET 200 https://registry.npmjs.org/openapi-typescript 206ms (cach
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `rev`.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `scores`.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `selected_images`.
- ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `sortkey`.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `sources`.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `sources_fields`.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `states`.
@@ -466,6 +462,10 @@ npm http fetch GET 200 https://registry.npmjs.org/openapi-typescript 206ms (cach
  ⚠  Example value must conform to the schema: `ingredients_fr` property type must be string.
  ⚠  Example value must conform to the schema: `nutrition_en` property type must be string.
  ⚠  Example value must conform to the schema: `packaging_fr` property type must be string.
+ ⚠  Example value must conform to the schema: `front` property type must be string.
+ ⚠  Example value must conform to the schema: `ingredients` property type must be string.
+ ⚠  Example value must conform to the schema: `nutrition` property type must be string.
+ ⚠  Example value must conform to the schema: `packaging` property type must be string.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `_id`.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `_keywords`.
  ⚠  Example value must conform to the schema: `product` property must NOT have unevaluated properties `abbreviated_product_name`.
@@ -1515,10 +1515,11 @@ npm http fetch GET 200 https://registry.npmjs.org/openapi-typescript 206ms (cach
  ⚠  Operation must have at least one `4XX` response.
  ⚠  Operation must have at least one `4XX` response.
  ⚠  Operation must have at least one `4XX` response.
+ ⚠  Operation must have at least one `4XX` response.
+ ⚠  Operation must have at least one `4XX` response.
  ⚠  Component: "knowledge_panels_included" is never used.
  ⚠  Component: "knowledge_panels_excluded" is never used.
  ⚠  Component: "AppCredentials" is never used.
  ⚠  Two schemas are referenced with the same name but different content. Renamed add_photo_to_existing_product to add_photo_to_existing_product-2.
  ⚠  Two schemas are referenced with the same name but different content. Renamed add_or_edit_a_product to add_or_edit_a_product-2.
-🚀 off@v2 → ./docs/redocly/openapi-v2.ts [571.2ms]
-npm info ok
+🚀 off@v2 → ./docs/redocly/openapi-v2.ts [363.2ms]

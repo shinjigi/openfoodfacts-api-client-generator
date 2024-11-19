@@ -23,9 +23,7 @@
     "swagger-run": "cd ./docs/swagger-ui && pnpm run start",
     "swagger-copy-run": "pnpm run swagger-copy && pnpm run swagger-run",
     "gen-build:tsfetch:api:redocly": "TS_POST_PROCESS_FILE=./clients/ts-fetch/postProcessFile.sh pnpm run gen-build:tsfetch && pnpm run gen:api && pnpm run redocly:lint && pnpm run redocly",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare:NF": "pnpm run gen:jar:tsfetch",
-    "prepare:old": "./vai_mo.sh"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "clients",

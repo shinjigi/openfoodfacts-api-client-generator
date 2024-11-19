@@ -76,7 +76,15 @@ Additional experimental generators are included:
 
 - `pnpm build:tsfetch` - Build TypeScript Fetch client
 - `pnpm gen-build:tsfetch` - Generate and build TypeScript Fetch client
-- `pnpm gen-build:tsfetch:api:redocly` - Complete workflow: generate client, build, update API docs
+- `pnpm gen-build:tsfetch:api:redocly` - Complete workflow that:
+
+  - Generates TypeScript Fetch client with post-processing
+  - Builds the generated client
+  - Creates OpenAPI specification files
+  - Runs Redocly linting
+  - Generates API documentation
+
+  This command ensures all components (client, API spec, and documentation) are in sync.
 
 ### Development Tools
 
@@ -122,13 +130,11 @@ Additional experimental generators are included:
 The project uses a forked version of the OpenFoodFacts API specification. To update the local API definition:
 
 1. Run `pnpm swagger-copy` to sync from the external source
-2. Run `pnpm swagger-run` to start the Swagger UI and verify the updated specification
+2. Run `pnpm swagger-run` to start the Swagger UI and verify the updated specification. If you use wsl you should use one of:
+   - http://localhost:8080
+   - http://<wsl-ip>:8080
 3. Generate new clients using the appropriate generation commands
-
-## License
-
-ISC
 
 ## Author
 
-LdP
+Shinjigi
