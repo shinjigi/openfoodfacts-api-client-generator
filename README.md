@@ -132,7 +132,7 @@ The project uses a forked version of the OpenFoodFacts API specification. To upd
 1. Run `pnpm swagger-copy` to sync from the external source
 2. Run `pnpm swagger-run` to start the Swagger UI and verify the updated specification. If you use wsl you should use one of:
    - http://localhost:8080
-   - http://<wsl-ip>:8080
+   - http://`<wsl-ip>`:8080
 3. Generate new clients using the appropriate generation commands
 
 ## Author
