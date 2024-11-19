@@ -1,0 +1,11 @@
+# See https://redocly.com/docs/cli/configuration/
+extends:
+  - ./redocly-common.yaml
+
+apis:
+  unified_off@v2:
+    root: ./openapi/openapi/openapi.yaml
+    x-openapi-ts:
+      output: ./docs/redocly/openapi-unified.ts
+    rules:
+      no-ambiguous-paths: error

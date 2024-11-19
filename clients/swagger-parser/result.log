@@ -1,0 +1,1268 @@
+Parsed OpenAPI Document:
+{
+  "_content": [
+    {
+      "_content": {
+        "key": {
+          "_content": "openapi",
+          "_storedElement": "string"
+        },
+        "value": {
+          "_content": "3.1.0",
+          "_storedElement": "openapi",
+          "_meta": {
+            "_content": [
+              {
+                "_content": {
+                  "key": {
+                    "_content": "classes",
+                    "_storedElement": "string"
+                  },
+                  "value": {
+                    "_content": [
+                      {
+                        "_content": "spec-version",
+                        "_storedElement": "string"
+                      },
+                      {
+                        "_content": "version",
+                        "_storedElement": "string"
+                      }
+                    ],
+                    "_storedElement": "array",
+                    "_meta": {
+                      "_content": [],
+                      "_storedElement": "object"
+                    },
+                    "_attributes": {
+                      "_content": [],
+                      "_storedElement": "object"
+                    }
+                  }
+                },
+                "_storedElement": "member"
+              }
+            ],
+            "_storedElement": "object",
+            "_meta": {
+              "_content": [],
+              "_storedElement": "object"
+            },
+            "_attributes": {
+              "_content": [],
+              "_storedElement": "object"
+            }
+          }
+        }
+      },
+      "_storedElement": "member",
+      "_meta": {
+        "_content": [
+          {
+            "_content": {
+              "key": {
+                "_content": "classes",
+                "_storedElement": "string"
+              },
+              "value": {
+                "_content": [
+                  {
+                    "_content": "fixed-field",
+                    "_storedElement": "string"
+                  }
+                ],
+                "_storedElement": "array"
+              }
+            },
+            "_storedElement": "member"
+          }
+        ],
+        "_storedElement": "object"
+      }
+    },
+    {
+      "_content": {
+        "key": {
+          "_content": "info",
+          "_storedElement": "string"
+        },
+        "value": {
+          "_content": [
+            {
+              "_content": {
+                "key": {
+                  "_content": "title",
+                  "_storedElement": "string"
+                },
+                "value": {
+                  "_content": "Sample API",
+                  "_storedElement": "string"
+                }
+              },
+              "_storedElement": "member",
+              "_meta": {
+                "_content": [
+                  {
+                    "_content": {
+                      "key": {
+                        "_content": "classes",
+                        "_storedElement": "string"
+                      },
+                      "value": {
+                        "_content": [
+                          {
+                            "_content": "fixed-field",
+                            "_storedElement": "string"
+                          }
+                        ],
+                        "_storedElement": "array"
+                      }
+                    },
+                    "_storedElement": "member"
+                  }
+                ],
+                "_storedElement": "object"
+              }
+            },
+            {
+              "_content": {
+                "key": {
+                  "_content": "version",
+                  "_storedElement": "string"
+                },
+                "value": {
+                  "_content": "1.0.0",
+                  "_storedElement": "string",
+                  "_meta": {
+                    "_content": [
+                      {
+                        "_content": {
+                          "key": {
+                            "_content": "classes",
+                            "_storedElement": "string"
+                          },
+                          "value": {
+                            "_content": [
+                              {
+                                "_content": "api-version",
+                                "_storedElement": "string"
+                              },
+                              {
+                                "_content": "version",
+                                "_storedElement": "string"
+                              }
+                            ],
+                            "_storedElement": "array"
+                          }
+                        },
+                        "_storedElement": "member"
+                      }
+                    ],
+                    "_storedElement": "object"
+                  }
+                }
+              },
+              "_storedElement": "member",
+              "_meta": {
+                "_content": [
+                  {
+                    "_content": {
+                      "key": {
+                        "_content": "classes",
+                        "_storedElement": "string"
+                      },
+                      "value": {
+                        "_content": [
+                          {
+                            "_content": "fixed-field",
+                            "_storedElement": "string"
+                          }
+                        ],
+                        "_storedElement": "array"
+                      }
+                    },
+                    "_storedElement": "member"
+                  }
+                ],
+                "_storedElement": "object"
+              }
+            }
+          ],
+          "_storedElement": "info",
+          "_meta": {
+            "_content": [
+              {
+                "_content": {
+                  "key": {
+                    "_content": "classes",
+                    "_storedElement": "string"
+                  },
+                  "value": {
+                    "_content": [
+                      {
+                        "_content": "info",
+                        "_storedElement": "string"
+                      }
+                    ],
+                    "_storedElement": "array",
+                    "_meta": {
+                      "_content": [],
+                      "_storedElement": "object"
+                    },
+                    "_attributes": {
+                      "_content": [],
+                      "_storedElement": "object"
+                    }
+                  }
+                },
+                "_storedElement": "member"
+              }
+            ],
+            "_storedElement": "object",
+            "_meta": {
+              "_content": [],
+              "_storedElement": "object"
+            },
+            "_attributes": {
+              "_content": [],
+              "_storedElement": "object"
+            }
+          }
+        }
+      },
+      "_storedElement": "member",
+      "_meta": {
+        "_content": [
+          {
+            "_content": {
+              "key": {
+                "_content": "classes",
+                "_storedElement": "string"
+              },
+              "value": {
+                "_content": [
+                  {
+                    "_content": "fixed-field",
+                    "_storedElement": "string"
+                  }
+                ],
+                "_storedElement": "array"
+              }
+            },
+            "_storedElement": "member"
+          }
+        ],
+        "_storedElement": "object"
+      }
+    },
+    {
+      "_content": {
+        "key": {
+          "_content": "paths",
+          "_storedElement": "string"
+        },
+        "value": {
+          "_content": [
+            {
+              "_content": {
+                "key": {
+                  "_content": "/hello",
+                  "_storedElement": "string",
+                  "_meta": {
+                    "_content": [
+                      {
+                        "_content": {
+                          "key": {
+                            "_content": "classes",
+                            "_storedElement": "string",
+                            "_meta": {
+                              "_content": [],
+                              "_storedElement": "object"
+                            },
+                            "_attributes": {
+                              "_content": [],
+                              "_storedElement": "object"
+                            }
+                          },
+                          "value": {
+                            "_content": [
+                              {
+                                "_content": "openapi-path-template",
+                                "_storedElement": "string",
+                                "_meta": {
+                                  "_content": [],
+                                  "_storedElement": "object"
+                                },
+                                "_attributes": {
+                                  "_content": [],
+                                  "_storedElement": "object"
+                                }
+                              },
+                              {
+                                "_content": "path-template",
+                                "_storedElement": "string",
+                                "_meta": {
+                                  "_content": [],
+                                  "_storedElement": "object"
+                                },
+                                "_attributes": {
+                                  "_content": [],
+                                  "_storedElement": "object"
+                                }
+                              }
+                            ],
+                            "_storedElement": "array",
+                            "_meta": {
+                              "_content": [],
+                              "_storedElement": "object"
+                            },
+                            "_attributes": {
+                              "_content": [],
+                              "_storedElement": "object"
+                            }
+                          }
+                        },
+                        "_storedElement": "member",
+                        "_meta": {
+                          "_content": [],
+                          "_storedElement": "object"
+                        },
+                        "_attributes": {
+                          "_content": [],
+                          "_storedElement": "object"
+                        }
+                      }
+                    ],
+                    "_storedElement": "object",
+                    "_meta": {
+                      "_content": [],
+                      "_storedElement": "object"
+                    },
+                    "_attributes": {
+                      "_content": [],
+                      "_storedElement": "object"
+                    }
+                  },
+                  "_attributes": {
+                    "_content": [],
+                    "_storedElement": "object"
+                  }
+                },
+                "value": {
+                  "_content": [
+                    {
+                      "_content": {
+                        "key": {
+                          "_content": "get",
+                          "_storedElement": "string",
+                          "_meta": {
+                            "_content": [],
+                            "_storedElement": "object"
+                          },
+                          "_attributes": {
+                            "_content": [],
+                            "_storedElement": "object"
+                          }
+                        },
+                        "value": {
+                          "_content": [
+                            {
+                              "_content": {
+                                "key": {
+                                  "_content": "summary",
+                                  "_storedElement": "string"
+                                },
+                                "value": {
+                                  "_content": "Say hello",
+                                  "_storedElement": "string"
+                                }
+                              },
+                              "_storedElement": "member",
+                              "_meta": {
+                                "_content": [
+                                  {
+                                    "_content": {
+                                      "key": {
+                                        "_content": "classes",
+                                        "_storedElement": "string"
+                                      },
+                                      "value": {
+                                        "_content": [
+                                          {
+                                            "_content": "fixed-field",
+                                            "_storedElement": "string"
+                                          }
+                                        ],
+                                        "_storedElement": "array"
+                                      }
+                                    },
+                                    "_storedElement": "member"
+                                  }
+                                ],
+                                "_storedElement": "object"
+                              }
+                            },
+                            {
+                              "_content": {
+                                "key": {
+                                  "_content": "responses",
+                                  "_storedElement": "string"
+                                },
+                                "value": {
+                                  "_content": [
+                                    {
+                                      "_content": {
+                                        "key": {
+                                          "_content": "200",
+                                          "_storedElement": "string",
+                                          "_meta": {
+                                            "_content": [],
+                                            "_storedElement": "object"
+                                          },
+                                          "_attributes": {
+                                            "_content": [],
+                                            "_storedElement": "object"
+                                          }
+                                        },
+                                        "value": {
+                                          "_content": [
+                                            {
+                                              "_content": {
+                                                "key": {
+                                                  "_content": "description",
+                                                  "_storedElement": "string"
+                                                },
+                                                "value": {
+                                                  "_content": "Successful response",
+                                                  "_storedElement": "string"
+                                                }
+                                              },
+                                              "_storedElement": "member",
+                                              "_meta": {
+                                                "_content": [
+                                                  {
+                                                    "_content": {
+                                                      "key": {
+                                                        "_content": "classes",
+                                                        "_storedElement": "string"
+                                                      },
+                                                      "value": {
+                                                        "_content": [
+                                                          {
+                                                            "_content": "fixed-field",
+                                                            "_storedElement": "string"
+                                                          }
+                                                        ],
+                                                        "_storedElement": "array"
+                                                      }
+                                                    },
+                                                    "_storedElement": "member"
+                                                  }
+                                                ],
+                                                "_storedElement": "object"
+                                              }
+                                            },
+                                            {
+                                              "_content": {
+                                                "key": {
+                                                  "_content": "content",
+                                                  "_storedElement": "string"
+                                                },
+                                                "value": {
+                                                  "_content": [
+                                                    {
+                                                      "_content": {
+                                                        "key": {
+                                                          "_content": "application/json",
+                                                          "_storedElement": "string"
+                                                        },
+                                                        "value": {
+                                                          "_content": [
+                                                            {
+                                                              "_content": {
+                                                                "key": {
+                                                                  "_content": "schema",
+                                                                  "_storedElement": "string"
+                                                                },
+                                                                "value": {
+                                                                  "_content": [
+                                                                    {
+                                                                      "_content": {
+                                                                        "key": {
+                                                                          "_content": "type",
+                                                                          "_storedElement": "string"
+                                                                        },
+                                                                        "value": {
+                                                                          "_content": "object",
+                                                                          "_storedElement": "string",
+                                                                          "_meta": {
+                                                                            "_content": [
+                                                                              {
+                                                                                "_content": {
+                                                                                  "key": {
+                                                                                    "_content": "classes",
+                                                                                    "_storedElement": "string"
+                                                                                  },
+                                                                                  "value": {
+                                                                                    "_content": [
+                                                                                      {
+                                                                                        "_content": "json-schema-type",
+                                                                                        "_storedElement": "string"
+                                                                                      }
+                                                                                    ],
+                                                                                    "_storedElement": "array"
+                                                                                  }
+                                                                                },
+                                                                                "_storedElement": "member"
+                                                                              }
+                                                                            ],
+                                                                            "_storedElement": "object"
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "_storedElement": "member",
+                                                                      "_meta": {
+                                                                        "_content": [
+                                                                          {
+                                                                            "_content": {
+                                                                              "key": {
+                                                                                "_content": "classes",
+                                                                                "_storedElement": "string"
+                                                                              },
+                                                                              "value": {
+                                                                                "_content": [
+                                                                                  {
+                                                                                    "_content": "fixed-field",
+                                                                                    "_storedElement": "string"
+                                                                                  }
+                                                                                ],
+                                                                                "_storedElement": "array"
+                                                                              }
+                                                                            },
+                                                                            "_storedElement": "member"
+                                                                          }
+                                                                        ],
+                                                                        "_storedElement": "object"
+                                                                      }
+                                                                    },
+                                                                    {
+                                                                      "_content": {
+                                                                        "key": {
+                                                                          "_content": "properties",
+                                                                          "_storedElement": "string"
+                                                                        },
+                                                                        "value": {
+                                                                          "_content": [
+                                                                            {
+                                                                              "_content": {
+                                                                                "key": {
+                                                                                  "_content": "message",
+                                                                                  "_storedElement": "string"
+                                                                                },
+                                                                                "value": {
+                                                                                  "_content": [
+                                                                                    {
+                                                                                      "_content": {
+                                                                                        "key": {
+                                                                                          "_content": "type",
+                                                                                          "_storedElement": "string"
+                                                                                        },
+                                                                                        "value": {
+                                                                                          "_content": "string",
+                                                                                          "_storedElement": "string",
+                                                                                          "_meta": {
+                                                                                            "_content": [
+                                                                                              {
+                                                                                                "_content": {
+                                                                                                  "key": {
+                                                                                                    "_content": "classes",
+                                                                                                    "_storedElement": "string"
+                                                                                                  },
+                                                                                                  "value": {
+                                                                                                    "_content": [
+                                                                                                      {
+                                                                                                        "_content": "json-schema-type",
+                                                                                                        "_storedElement": "string"
+                                                                                                      }
+                                                                                                    ],
+                                                                                                    "_storedElement": "array"
+                                                                                                  }
+                                                                                                },
+                                                                                                "_storedElement": "member"
+                                                                                              }
+                                                                                            ],
+                                                                                            "_storedElement": "object"
+                                                                                          }
+                                                                                        }
+                                                                                      },
+                                                                                      "_storedElement": "member",
+                                                                                      "_meta": {
+                                                                                        "_content": [
+                                                                                          {
+                                                                                            "_content": {
+                                                                                              "key": {
+                                                                                                "_content": "classes",
+                                                                                                "_storedElement": "string"
+                                                                                              },
+                                                                                              "value": {
+                                                                                                "_content": [
+                                                                                                  {
+                                                                                                    "_content": "fixed-field",
+                                                                                                    "_storedElement": "string"
+                                                                                                  }
+                                                                                                ],
+                                                                                                "_storedElement": "array"
+                                                                                              }
+                                                                                            },
+                                                                                            "_storedElement": "member"
+                                                                                          }
+                                                                                        ],
+                                                                                        "_storedElement": "object"
+                                                                                      }
+                                                                                    }
+                                                                                  ],
+                                                                                  "_storedElement": "schema",
+                                                                                  "_meta": {
+                                                                                    "_content": [
+                                                                                      {
+                                                                                        "_content": {
+                                                                                          "key": {
+                                                                                            "_content": "inherited$schema",
+                                                                                            "_storedElement": "string"
+                                                                                          },
+                                                                                          "value": {
+                                                                                            "_content": "https://spec.openapis.org/oas/3.1/dialect/base",
+                                                                                            "_storedElement": "string"
+                                                                                          }
+                                                                                        },
+                                                                                        "_storedElement": "member"
+                                                                                      },
+                                                                                      {
+                                                                                        "_content": {
+                                                                                          "key": {
+                                                                                            "_content": "inherited$id",
+                                                                                            "_storedElement": "string"
+                                                                                          },
+                                                                                          "value": {
+                                                                                            "_content": [],
+                                                                                            "_storedElement": "array",
+                                                                                            "_meta": {
+                                                                                              "_content": [],
+                                                                                              "_storedElement": "object"
+                                                                                            },
+                                                                                            "_attributes": {
+                                                                                              "_content": [],
+                                                                                              "_storedElement": "object"
+                                                                                            }
+                                                                                          }
+                                                                                        },
+                                                                                        "_storedElement": "member"
+                                                                                      }
+                                                                                    ],
+                                                                                    "_storedElement": "object",
+                                                                                    "_meta": {
+                                                                                      "_content": [],
+                                                                                      "_storedElement": "object"
+                                                                                    },
+                                                                                    "_attributes": {
+                                                                                      "_content": [],
+                                                                                      "_storedElement": "object"
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
+                                                                              "_storedElement": "member",
+                                                                              "_meta": {
+                                                                                "_content": [
+                                                                                  {
+                                                                                    "_content": {
+                                                                                      "key": {
+                                                                                        "_content": "classes",
+                                                                                        "_storedElement": "string"
+                                                                                      },
+                                                                                      "value": {
+                                                                                        "_content": [
+                                                                                          {
+                                                                                            "_content": "patterned-field",
+                                                                                            "_storedElement": "string"
+                                                                                          }
+                                                                                        ],
+                                                                                        "_storedElement": "array"
+                                                                                      }
+                                                                                    },
+                                                                                    "_storedElement": "member"
+                                                                                  }
+                                                                                ],
+                                                                                "_storedElement": "object"
+                                                                              }
+                                                                            }
+                                                                          ],
+                                                                          "_storedElement": "object",
+                                                                          "_meta": {
+                                                                            "_content": [
+                                                                              {
+                                                                                "_content": {
+                                                                                  "key": {
+                                                                                    "_content": "classes",
+                                                                                    "_storedElement": "string"
+                                                                                  },
+                                                                                  "value": {
+                                                                                    "_content": [
+                                                                                      {
+                                                                                        "_content": "json-schema-properties",
+                                                                                        "_storedElement": "string"
+                                                                                      }
+                                                                                    ],
+                                                                                    "_storedElement": "array",
+                                                                                    "_meta": {
+                                                                                      "_content": [],
+                                                                                      "_storedElement": "object"
+                                                                                    },
+                                                                                    "_attributes": {
+                                                                                      "_content": [],
+                                                                                      "_storedElement": "object"
+                                                                                    }
+                                                                                  }
+                                                                                },
+                                                                                "_storedElement": "member"
+                                                                              }
+                                                                            ],
+                                                                            "_storedElement": "object",
+                                                                            "_meta": {
+                                                                              "_content": [],
+                                                                              "_storedElement": "object"
+                                                                            },
+                                                                            "_attributes": {
+                                                                              "_content": [],
+                                                                              "_storedElement": "object"
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "_storedElement": "member",
+                                                                      "_meta": {
+                                                                        "_content": [
+                                                                          {
+                                                                            "_content": {
+                                                                              "key": {
+                                                                                "_content": "classes",
+                                                                                "_storedElement": "string"
+                                                                              },
+                                                                              "value": {
+                                                                                "_content": [
+                                                                                  {
+                                                                                    "_content": "fixed-field",
+                                                                                    "_storedElement": "string"
+                                                                                  }
+                                                                                ],
+                                                                                "_storedElement": "array"
+                                                                              }
+                                                                            },
+                                                                            "_storedElement": "member"
+                                                                          }
+                                                                        ],
+                                                                        "_storedElement": "object"
+                                                                      }
+                                                                    }
+                                                                  ],
+                                                                  "_storedElement": "schema",
+                                                                  "_meta": {
+                                                                    "_content": [
+                                                                      {
+                                                                        "_content": {
+                                                                          "key": {
+                                                                            "_content": "inherited$schema",
+                                                                            "_storedElement": "string"
+                                                                          },
+                                                                          "value": {
+                                                                            "_content": "https://spec.openapis.org/oas/3.1/dialect/base",
+                                                                            "_storedElement": "string"
+                                                                          }
+                                                                        },
+                                                                        "_storedElement": "member"
+                                                                      },
+                                                                      {
+                                                                        "_content": {
+                                                                          "key": {
+                                                                            "_content": "inherited$id",
+                                                                            "_storedElement": "string"
+                                                                          },
+                                                                          "value": {
+                                                                            "_content": [],
+                                                                            "_storedElement": "array",
+                                                                            "_meta": {
+                                                                              "_content": [],
+                                                                              "_storedElement": "object"
+                                                                            },
+                                                                            "_attributes": {
+                                                                              "_content": [],
+                                                                              "_storedElement": "object"
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "_storedElement": "member"
+                                                                      }
+                                                                    ],
+                                                                    "_storedElement": "object",
+                                                                    "_meta": {
+                                                                      "_content": [],
+                                                                      "_storedElement": "object"
+                                                                    },
+                                                                    "_attributes": {
+                                                                      "_content": [],
+                                                                      "_storedElement": "object"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "_storedElement": "member",
+                                                              "_meta": {
+                                                                "_content": [
+                                                                  {
+                                                                    "_content": {
+                                                                      "key": {
+                                                                        "_content": "classes",
+                                                                        "_storedElement": "string"
+                                                                      },
+                                                                      "value": {
+                                                                        "_content": [
+                                                                          {
+                                                                            "_content": "fixed-field",
+                                                                            "_storedElement": "string"
+                                                                          }
+                                                                        ],
+                                                                        "_storedElement": "array"
+                                                                      }
+                                                                    },
+                                                                    "_storedElement": "member"
+                                                                  }
+                                                                ],
+                                                                "_storedElement": "object"
+                                                              }
+                                                            }
+                                                          ],
+                                                          "_storedElement": "mediaType",
+                                                          "_meta": {
+                                                            "_content": [
+                                                              {
+                                                                "_content": {
+                                                                  "key": {
+                                                                    "_content": "media-type",
+                                                                    "_storedElement": "string"
+                                                                  },
+                                                                  "value": {
+                                                                    "_content": "application/json",
+                                                                    "_storedElement": "string"
+                                                                  }
+                                                                },
+                                                                "_storedElement": "member"
+                                                              }
+                                                            ],
+                                                            "_storedElement": "object"
+                                                          }
+                                                        }
+                                                      },
+                                                      "_storedElement": "member",
+                                                      "_meta": {
+                                                        "_content": [
+                                                          {
+                                                            "_content": {
+                                                              "key": {
+                                                                "_content": "classes",
+                                                                "_storedElement": "string"
+                                                              },
+                                                              "value": {
+                                                                "_content": [
+                                                                  {
+                                                                    "_content": "patterned-field",
+                                                                    "_storedElement": "string"
+                                                                  }
+                                                                ],
+                                                                "_storedElement": "array"
+                                                              }
+                                                            },
+                                                            "_storedElement": "member"
+                                                          }
+                                                        ],
+                                                        "_storedElement": "object"
+                                                      }
+                                                    }
+                                                  ],
+                                                  "_storedElement": "object",
+                                                  "_meta": {
+                                                    "_content": [
+                                                      {
+                                                        "_content": {
+                                                          "key": {
+                                                            "_content": "classes",
+                                                            "_storedElement": "string"
+                                                          },
+                                                          "value": {
+                                                            "_content": [
+                                                              {
+                                                                "_content": "response-content",
+                                                                "_storedElement": "string"
+                                                              },
+                                                              {
+                                                                "_content": "content",
+                                                                "_storedElement": "string"
+                                                              }
+                                                            ],
+                                                            "_storedElement": "array",
+                                                            "_meta": {
+                                                              "_content": [],
+                                                              "_storedElement": "object"
+                                                            },
+                                                            "_attributes": {
+                                                              "_content": [],
+                                                              "_storedElement": "object"
+                                                            }
+                                                          }
+                                                        },
+                                                        "_storedElement": "member"
+                                                      }
+                                                    ],
+                                                    "_storedElement": "object",
+                                                    "_meta": {
+                                                      "_content": [],
+                                                      "_storedElement": "object"
+                                                    },
+                                                    "_attributes": {
+                                                      "_content": [],
+                                                      "_storedElement": "object"
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "_storedElement": "member",
+                                              "_meta": {
+                                                "_content": [
+                                                  {
+                                                    "_content": {
+                                                      "key": {
+                                                        "_content": "classes",
+                                                        "_storedElement": "string"
+                                                      },
+                                                      "value": {
+                                                        "_content": [
+                                                          {
+                                                            "_content": "fixed-field",
+                                                            "_storedElement": "string"
+                                                          }
+                                                        ],
+                                                        "_storedElement": "array"
+                                                      }
+                                                    },
+                                                    "_storedElement": "member"
+                                                  }
+                                                ],
+                                                "_storedElement": "object"
+                                              }
+                                            }
+                                          ],
+                                          "_storedElement": "response",
+                                          "_meta": {
+                                            "_content": [
+                                              {
+                                                "_content": {
+                                                  "key": {
+                                                    "_content": "http-status-code",
+                                                    "_storedElement": "string"
+                                                  },
+                                                  "value": {
+                                                    "_content": "200",
+                                                    "_storedElement": "string"
+                                                  }
+                                                },
+                                                "_storedElement": "member"
+                                              }
+                                            ],
+                                            "_storedElement": "object"
+                                          }
+                                        }
+                                      },
+                                      "_storedElement": "member",
+                                      "_meta": {
+                                        "_content": [
+                                          {
+                                            "_content": {
+                                              "key": {
+                                                "_content": "classes",
+                                                "_storedElement": "string"
+                                              },
+                                              "value": {
+                                                "_content": [
+                                                  {
+                                                    "_content": "patterned-field",
+                                                    "_storedElement": "string"
+                                                  }
+                                                ],
+                                                "_storedElement": "array"
+                                              }
+                                            },
+                                            "_storedElement": "member"
+                                          }
+                                        ],
+                                        "_storedElement": "object"
+                                      }
+                                    }
+                                  ],
+                                  "_storedElement": "responses",
+                                  "_meta": {
+                                    "_content": [],
+                                    "_storedElement": "object"
+                                  }
+                                }
+                              },
+                              "_storedElement": "member",
+                              "_meta": {
+                                "_content": [
+                                  {
+                                    "_content": {
+                                      "key": {
+                                        "_content": "classes",
+                                        "_storedElement": "string"
+                                      },
+                                      "value": {
+                                        "_content": [
+                                          {
+                                            "_content": "fixed-field",
+                                            "_storedElement": "string"
+                                          }
+                                        ],
+                                        "_storedElement": "array"
+                                      }
+                                    },
+                                    "_storedElement": "member"
+                                  }
+                                ],
+                                "_storedElement": "object"
+                              }
+                            }
+                          ],
+                          "_storedElement": "operation",
+                          "_meta": {
+                            "_content": [
+                              {
+                                "_content": {
+                                  "key": {
+                                    "_content": "http-method",
+                                    "_storedElement": "string"
+                                  },
+                                  "value": {
+                                    "_content": "GET",
+                                    "_storedElement": "string"
+                                  }
+                                },
+                                "_storedElement": "member"
+                              }
+                            ],
+                            "_storedElement": "object"
+                          }
+                        }
+                      },
+                      "_storedElement": "member",
+                      "_meta": {
+                        "_content": [
+                          {
+                            "_content": {
+                              "key": {
+                                "_content": "classes",
+                                "_storedElement": "string"
+                              },
+                              "value": {
+                                "_content": [
+                                  {
+                                    "_content": "fixed-field",
+                                    "_storedElement": "string"
+                                  }
+                                ],
+                                "_storedElement": "array"
+                              }
+                            },
+                            "_storedElement": "member"
+                          }
+                        ],
+                        "_storedElement": "object"
+                      }
+                    }
+                  ],
+                  "_storedElement": "pathItem",
+                  "_meta": {
+                    "_content": [
+                      {
+                        "_content": {
+                          "key": {
+                            "_content": "path",
+                            "_storedElement": "string"
+                          },
+                          "value": {
+                            "_content": "/hello",
+                            "_storedElement": "string",
+                            "_meta": {
+                              "_content": [
+                                {
+                                  "_content": {
+                                    "key": {
+                                      "_content": "classes",
+                                      "_storedElement": "string"
+                                    },
+                                    "value": {
+                                      "_content": [
+                                        {
+                                          "_content": "openapi-path-template",
+                                          "_storedElement": "string"
+                                        },
+                                        {
+                                          "_content": "path-template",
+                                          "_storedElement": "string"
+                                        }
+                                      ],
+                                      "_storedElement": "array"
+                                    }
+                                  },
+                                  "_storedElement": "member"
+                                }
+                              ],
+                              "_storedElement": "object"
+                            }
+                          }
+                        },
+                        "_storedElement": "member"
+                      }
+                    ],
+                    "_storedElement": "object"
+                  }
+                }
+              },
+              "_storedElement": "member",
+              "_meta": {
+                "_content": [
+                  {
+                    "_content": {
+                      "key": {
+                        "_content": "classes",
+                        "_storedElement": "string"
+                      },
+                      "value": {
+                        "_content": [
+                          {
+                            "_content": "patterned-field",
+                            "_storedElement": "string"
+                          }
+                        ],
+                        "_storedElement": "array"
+                      }
+                    },
+                    "_storedElement": "member"
+                  }
+                ],
+                "_storedElement": "object"
+              }
+            }
+          ],
+          "_storedElement": "paths",
+          "_meta": {
+            "_content": [],
+            "_storedElement": "object"
+          }
+        }
+      },
+      "_storedElement": "member",
+      "_meta": {
+        "_content": [
+          {
+            "_content": {
+              "key": {
+                "_content": "classes",
+                "_storedElement": "string"
+              },
+              "value": {
+                "_content": [
+                  {
+                    "_content": "fixed-field",
+                    "_storedElement": "string"
+                  }
+                ],
+                "_storedElement": "array"
+              }
+            },
+            "_storedElement": "member"
+          }
+        ],
+        "_storedElement": "object"
+      }
+    }
+  ],
+  "_storedElement": "openApi3_1",
+  "_meta": {
+    "_content": [
+      {
+        "_content": {
+          "key": {
+            "_content": "classes",
+            "_storedElement": "string"
+          },
+          "value": {
+            "_content": [
+              {
+                "_content": "api",
+                "_storedElement": "string"
+              },
+              {
+                "_content": "result",
+                "_storedElement": "string"
+              },
+              {
+                "_content": "result",
+                "_storedElement": "string"
+              }
+            ],
+            "_storedElement": "array",
+            "_meta": {
+              "_content": [],
+              "_storedElement": "object"
+            },
+            "_attributes": {
+              "_content": [],
+              "_storedElement": "object"
+            }
+          }
+        },
+        "_storedElement": "member"
+      }
+    ],
+    "_storedElement": "object",
+    "_meta": {
+      "_content": [],
+      "_storedElement": "object"
+    },
+    "_attributes": {
+      "_content": [],
+      "_storedElement": "object"
+    }
+  },
+  "_attributes": {
+    "_content": [],
+    "_storedElement": "object",
+    "_meta": {
+      "_content": [],
+      "_storedElement": "object"
+    },
+    "_attributes": {
+      "_content": [],
+      "_storedElement": "object"
+    }
+  }
+}
+
+API Title: StringElement { _content: 'Sample API', _storedElement: 'string' }
+API Version: StringElement {
+  _content: '1.0.0',
+  _storedElement: 'string',
+  _meta: ObjectElement {
+    _content: [ [MemberElement] ],
+    _storedElement: 'object'
+  }
+}
+Available Paths: [ '_content', '_storedElement', '_meta' ]

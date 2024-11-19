@@ -1,0 +1,37 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "bashdb",
+            "request": "launch",
+            "terminalKind": "integrated",
+            "name": "Bash-Debug (simplest configuration)",
+            "cwd": "${workspaceFolder}",
+            "pathBash": "/usr/bin/bash",
+            "env": {
+                "PATH": "${env:HOME}/.nvm/versions/node/v20.17.0/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:${env:HOME}/anaconda3/bin:${env:HOME}/anaconda3/condabin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:${env:HOME}/anaconda3/bin:${env:HOME}/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/PowerShell/7:/mnt/c/Program Files/Microsoft SDKs/Azure/CLI2/wbin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/dotnet:/mnt/c/Program Files/TortoiseSVN/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/Cloudflare/Cloudflare WARP:/mnt/c/SVN/_app/Flutter/flutter/bin:/snap/bin"
+            },
+            "program": "${file}"
+        },
+        {
+            "type": "bashdb",
+            "request": "launch",
+            "name": "Bash-Debug (WSL)",
+            "cwd": "${workspaceFolder}",
+            "program": "${file}",
+            "args": [],
+            "env": {},
+            "pathBash": "/bin/bash",
+            "pathBashdb": "/usr/bin/bashdb",
+            "pathCat": "/bin/cat",
+            "pathMkfifo": "/usr/bin/mkfifo",
+            "pathPkill": "/usr/bin/pkill",
+            "windows": {
+                "bashPath": "wsl.exe"
+            }
+        }
+    ]
+}

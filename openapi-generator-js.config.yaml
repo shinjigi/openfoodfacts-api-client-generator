@@ -1,0 +1,56 @@
+generatorName: javascript
+outputDir: ./clients/js
+#inputSpec: ../../api-external/openfoodfacts/ref/api-short.yml
+inputSpec: ../../api-external/openfoodfacts/ref/api.yml
+verbose: false
+#templateDir: ./clients/js/custom-templates
+gitHost: "EuroconsumersIT@dev.azure.com"
+gitUserId: "EuroconsumersIT"
+gitRepoId: "Italy.Applications/_git/Italy.Iside"
+additionalProperties:
+  npmName: "@iside/ac-open-food-facts-client-js"
+  npmVersion: "1.124.0"
+  #npmRepository: "http://svn.belux.conseur.org/svn/repository/projects/internet/Euroconsumers.Core.Javascript/trunk/Vue/food-app"
+  #npmRepository: "https://EuroconsumersIT@dev.azure.com/EuroconsumersIT/Italy.Applications/_git/Italy.Iside"
+  snapshot: false
+  #
+  supportsES6: false
+  modelPropertyNaming: "original"
+  enumPropertyNaming: "original"
+  paramNaming: "original"
+enablePostProcessFile: true
+modelNameMappings:
+  ingredient_1: Ingredient
+  product_extended_owner_fields_1: ProductExtendedOwnerFields
+  product_extended_owner_fields_additionalProperties: NumberStringObjectType
+  product_extended_owner_fields_1_additionalProperties: NumberStringObjectType
+  product_ingredients_traces_tags: NumberStringObjectType
+  product_ingredients_traces_hierarchy: NumberStringObjectType
+  product_ingredients_traces_hierarchy_inner: NumberStringObjectType
+  product_ecoscore_adjustments_1_origins_of_ingredients: ProductEcoscoreAdjustmentsOriginsOfIngredients
+  product_ecoscore_adjustments_1: ProductEcoscoreAdjustments
+  product_ecoscore_data_1: ProductEcoscoreData
+  product_selected_images_1: ProductSelectedImages
+  product_selected_images_1_ingredients: ProductSelectedImagesIngredients
+  image_size_1: ImageSize
+  product_meta_source_1: ProductMetaSource
+  product_meta_source_fields_org_gs1: ProductMetaSourceFieldsOrgGs
+#typeMappings:
+#  Product: ProductCustom
+#  ProductExtendedOwnerFieldsAdditionalProperties: NumberStringObjectType
+#  ProductExtendedOwnerFieldsAdditionalProperties: 'string | number | object'
+#  NumberStringObjectType: './src/custom/NumberStringObjectType'
+
+#importMappings:
+#  Product: "./ProductCustom"
+#  ProductCustom: "./ProductCustom"
+
+#  NumberStringObjectType: "./src/custom/NumberStringObjectType"
+#
+
+#globalProperties:
+#  debugOpenAPI: false    # sembra attivarsi anche se si decommenta a false. Forse è un bug
+#  debugModels: false     # sembra attivarsi anche se si decommenta a false. Forse è un bug
+#  debugOperations: false # sembra attivarsi anche se si decommenta a false. Forse è un bug
+#models:
+#  ProductExtendedOwnerFieldsAdditionalProperties: false

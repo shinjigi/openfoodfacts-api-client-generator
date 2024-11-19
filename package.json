@@ -1,17 +1,48 @@
 {
-  "name": "fe-client",
-  "version": "1.0.0",
+  "name": "@iside/ac-open-food-facts-clients",
+  "version": "2.1.0",
   "description": "client generation for openfoodfact",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gen:api": "java -jar ../../../../_GH/_java/openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar generate -i ../../api-external/openfoodfacts/ref/api.yml -g openapi-yaml -o openapi/",
+    "gen:ts": "npx @openapitools/openapi-generator-cli@latest generate --config ./openapi-generator-ts.config.yaml",
+    "gen:js": "npx @openapitools/openapi-generator-cli@latest generate --config ./openapi-generator-js.config.yaml",
+    "gen:js:rm": "clear && rm -r ./client/js/src/* & npx @openapitools/openapi-generator-cli@latest generate --config ./openapi-generator-js.config.yaml | grep -E '(ERR|WARN|TemplateManager|[Oo]neOf|[Aa]llOf|Response|00)'",
+    "gen:jar:js:debug": "clear && rm -r ./clients/js/src & java -jar ../../../../_GH/_java/openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar generate --config ./openapi-generator-js.config.yaml | grep -E '(ERR|WARN|TemplateManager|[Oo]neOf|[Aa]llOf|Response|00)'",
+    "gen:jar:ts": "clear && rm -r ./clients/ts/src & java -jar ../../../../_GH/_java/openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar generate --config ./openapi-generator-ts.config.yaml > ./clients/ts/gen-log.txt",
+    "gen:jar:tsfetch": "./clean-ts-fetch.sh && java -jar ../../../../_GH/_java/openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar generate --config ./openapi-generator-tsfetch.config.yaml > ./clients/ts-fetch/gen-log.txt",
+    "gen:jar:tsfetch:alias": "clear && ./clean-ts-fetch.sh && java -jar ../../../../_GH/_java/openapi-generator/modules/openapi-generator-cli/target/openapi-generator-cli.jar generate --config ./openapi-generator-tsfetch.config.yaml --generate-alias-as-model > ./clients/ts-fetch/gen-log.txt",
+    "gen:hei-api": "npx @hey-api/openapi-ts@latest -i ../../api-external/openfoodfacts/ref/api.yml -o ./clients/openapi-ts -c @hey-api/client-fetch",
+    "gen:openapi-typescript": "npx openapi-typescript@latest  > ./docs/redocly/gen-log.txt 2>&1",
+    "openapi-generator:java:compile": "export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/' && ../../../../_GH/_java/openapi-generator/mvnw -f ../../../../_GH/_java/openapi-generator/pom.xml clean install -DskipTests -DskipITs",
+    "build:tsfetch": "cd ./clients/ts-fetch && pnpm run build",
+    "gen-build:tsfetch": "clear && pnpm run gen:jar:tsfetch && pnpm run build:tsfetch",
+    "dependencies:madge": "npx madge@latest --warning --debug --image graph.svg ./clients/ts-fetch/src/models/",
+    "openapitools:version:snap": "npm view @openapitools/openapi-generator-cli versions --json | jq -r '.[]' | grep -Ei 'alpha|beta|rc|snapshot|SNAPSHOT'",
+    "redocly": "npx @redocly/cli@latest build-docs ../../api-external/openfoodfacts/ref/api.yml --output ./docs/redocly/redocly.html",
+    "redocly:unified": "npx @redocly/cli@latest build-docs --config ./redocly-unified.yaml --output ./docs/redocly/openapi-unified.html",
+    "redocly:lint": "npx @redocly/cli@latest lint",
+    "redocly:lint:v2": "npx @redocly/cli@latest lint off@v2",
+    "swagger-copy": "rsync -av --delete ../../api-external/openfoodfacts/ref/ ./docs/swagger-ui/src/api-ref ",
+    "swagger-copy-run": "pnpm run swagger-copy && cd ./docs/swagger-ui && npm run start",
+    "gen-build:tsfetch:api:redocly": "TS_POST_PROCESS_FILE=./clients/ts-fetch/postProcessFile.sh pnpm run gen-build:tsfetch && pnpm run gen:api && pnpm run redocly:lint && pnpm run redocly",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare:NF": "pnpm run gen:jar:tsfetch",
+    "prepare:old": "./vai_mo.sh"
   },
   "keywords": [
-    "clien",
+    "clients",
     "api",
     "iside",
     "foodapp"
   ],
   "author": "LdP",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.14.0",
+    "@redocly/cli": "^1.25.8"
+  },
+  "dependencies": {
+    "@iside/ac-open-food-facts-clients": "file:"
+  }
 }

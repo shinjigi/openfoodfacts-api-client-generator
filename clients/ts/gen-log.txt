@@ -1,0 +1,199 @@
+[main] WARN  o.o.codegen.DefaultCodegen - Generation using 3.1.0 specs is in development and is not officially supported yet. If you would like to expedite development, please consider working on the open issues in the 3.1.0 project: https://github.com/orgs/OpenAPITools/projects/4/views/1 and reach out to our team on Slack at https://join.slack.com/t/openapi-generator/shared_invite/zt-12jxxd7p2-XUeQM~4pzsU9x~eGLQqX2g
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: typescript (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'typescript' is considered experimental.
+[main] INFO  o.o.c.l.AbstractTypeScriptClientCodegen - Hint: Environment variable 'TS_POST_PROCESS_FILE' (optional) not defined. E.g. to format the source code, please try 'export TS_POST_PROCESS_FILE="/usr/local/bin/prettier --write"' (Linux/Mac)
+[main] INFO  o.o.c.l.AbstractTypeScriptClientCodegen - Note: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] WARN  o.o.codegen.DefaultCodegen - The value (generator's option) must be either boolean or string. Default to `false`.
+[main] WARN  o.o.codegen.DefaultCodegen - The value (generator's option) must be either boolean or string. Default to `false`.
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_misc_nutrient_levels. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_misc_nutrient_levels=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_misc_nutrient_levels=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as Packaging_component__READ_. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings Packaging_component__READ_=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings Packaging_component__READ_=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as image_role_sizes. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings image_role_sizes=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings image_role_sizes=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as image_size_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings image_size_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings image_size_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as image_sizes. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings image_sizes=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings image_sizes=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_selected_images_ingredients. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_selected_images_ingredients=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_selected_images_ingredients=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_adjustments_origins_of_ingredients. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_adjustments_origins_of_ingredients=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_adjustments_origins_of_ingredients=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_adjustments_packaging. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_adjustments_packaging=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_adjustments_packaging=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_adjustments_production_system. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_adjustments_production_system=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_adjustments_production_system=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_adjustments_threatened_species. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_adjustments_threatened_species=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_adjustments_threatened_species=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_data_agribalyse. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_data_agribalyse=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_data_agribalyse=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_data_missing. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_data_missing=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_data_missing=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_data_previous_data. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_data_previous_data=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_data_previous_data=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as ingredient_percent_max. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings ingredient_percent_max=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings ingredient_percent_max=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ingredients_ingredients_analysis. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ingredients_ingredients_analysis=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ingredients_ingredients_analysis=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ingredients_traces_hierarchy_inner. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ingredients_traces_hierarchy_inner=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ingredients_traces_hierarchy_inner=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_nutrition_nutriments. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_nutrition_nutriments=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_nutrition_nutriments=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_nutrition_nutriscore_data. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_nutrition_nutriscore_data=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_nutrition_nutriscore_data=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_extended_categories_properties. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_extended_categories_properties=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_extended_categories_properties=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_extended_owner_fields_additionalProperties. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_extended_owner_fields_additionalProperties=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_extended_owner_fields_additionalProperties=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_extended_owner_fields. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_extended_owner_fields=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_extended_owner_fields=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_meta_source_manufacturer. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_meta_source_manufacturer=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_meta_source_manufacturer=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_meta_source_fields_org_gs1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_meta_source_fields_org_gs1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_meta_source_fields_org_gs1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as get_cgi_product_image_upload_pl_request. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings get_cgi_product_image_upload_pl_request=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings get_cgi_product_image_upload_pl_request=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as add_photo_to_existing_product_response_files_inner. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings add_photo_to_existing_product_response_files_inner=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings add_photo_to_existing_product_response_files_inner=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as add_photo_to_existing_product_response_image. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings add_photo_to_existing_product_response_image=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings add_photo_to_existing_product_response_image=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as rotate_a_photo_response_image. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings rotate_a_photo_response_image=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings rotate_a_photo_response_image=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as post_cgi_product_image_crop_pl_request. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings post_cgi_product_image_crop_pl_request=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings post_cgi_product_image_crop_pl_request=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as post_cgi_product_jqm2_pl_request. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings post_cgi_product_jqm2_pl_request=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings post_cgi_product_jqm2_pl_request=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as get_preferences_200_response_inner. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings get_preferences_200_response_inner=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings get_preferences_200_response_inner=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as get_cgi_session_pl_request. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings get_cgi_session_pl_request=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings get_cgi_session_pl_request=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_selected_images_1_ingredients_display. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_selected_images_1_ingredients_display=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_selected_images_1_ingredients_display=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_selected_images_1_ingredients_small. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_selected_images_1_ingredients_small=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_selected_images_1_ingredients_small=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_selected_images_1_ingredients_thumb. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_selected_images_1_ingredients_thumb=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_selected_images_1_ingredients_thumb=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_selected_images_1_ingredients. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_selected_images_1_ingredients=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_selected_images_1_ingredients=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_selected_images_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_selected_images_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_selected_images_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_data_1_grades. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_data_1_grades=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_data_1_grades=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ecoscore_data_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ecoscore_data_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ecoscore_data_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ingredients_percent_max. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ingredients_percent_max=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ingredients_percent_max=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as ingredient_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings ingredient_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings ingredient_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ingredients_traces_hierarchy. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ingredients_traces_hierarchy=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ingredients_traces_hierarchy=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_ingredients_traces_tags. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_ingredients_traces_tags=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_ingredients_traces_tags=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as Nutriscore2021_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings Nutriscore2021_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings Nutriscore2021_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as Nutriscore2023_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings Nutriscore2023_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings Nutriscore2023_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as Nutriscores_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings Nutriscores_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings Nutriscores_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as Nutriscore2021Data_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings Nutriscore2021Data_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings Nutriscore2021Data_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_extended_owner_fields_1_additionalProperties. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_extended_owner_fields_1_additionalProperties=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_extended_owner_fields_1_additionalProperties=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_extended_owner_fields_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_extended_owner_fields_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_extended_owner_fields_1=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as Product_allOf_languages_codes. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings Product_allOf_languages_codes=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings Product_allOf_languages_codes=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as Product_allOf_manufacturer. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings Product_allOf_manufacturer=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings Product_allOf_manufacturer=NewModel,ModelA=NewModelA in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as product_meta_source_1. To have complete control of the model name, set the `title` field or use the modelNameMapping option (e.g. --model-name-mappings product_meta_source_1=NewModel,ModelA=NewModelA in CLI) or inlineSchemaNameMapping option (--inline-schema-name-mappings product_meta_source_1=NewModel,ModelA=NewModelA in CLI).
+[main] WARN  o.o.codegen.DefaultCodegen - Generation using 3.1.0 specs is in development and is not officially supported yet. If you would like to expedite development, please consider working on the open issues in the 3.1.0 project: https://github.com/orgs/OpenAPITools/projects/4/views/1 and reach out to our team on Slack at https://join.slack.com/t/openapi-generator/shared_invite/zt-12jxxd7p2-XUeQM~4pzsU9x~eGLQqX2g
+[main] INFO  o.o.codegen.DefaultGenerator - Model get_cgi_product_image_upload_pl_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model post_cgi_product_image_crop_pl_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model unselect_a_photo_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model post_cgi_product_jqm2_pl_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model get_cgi_session_pl_request not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model product_selected_images_1_ingredients_display not generated since it's a free-form object
+[main] INFO  o.o.codegen.DefaultGenerator - Model product_selected_images_1_ingredients_small not generated since it's a free-form object
+[main] INFO  o.o.codegen.DefaultGenerator - Model product_selected_images_1_ingredients_thumb not generated since it's a free-form object
+[main] INFO  o.o.codegen.DefaultGenerator - Model product_ecoscore_data_1_grades not generated since it's a free-form object
+[main] INFO  o.o.codegen.DefaultGenerator - Model Product_allOf_languages_codes not generated since it's a free-form object
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/AddOrEditAProductResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/AddPhotoToExistingProductResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/AddPhotoToExistingProductResponseFilesInner.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/AddPhotoToExistingProductResponseImage.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/AdjustmentsOriginOfIngredientAggregated.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/AdjustmentsPackagingItem.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/AppCredentials.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Attribute.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/AttributeGroup.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Element.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/GetPreferences200ResponseInner.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/GetProductByBarcodeAllResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/GetProductByBarcodeKnowledgePanelsResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/GetProductByBarcodeResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Image.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ImageElement.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ImageRole.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ImageRoleSizes.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ImageSize.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ImageSizes.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Ingredient.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/IngredientPercentMax.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/NumberStringObjectType.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Nutrient.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Nutriscore2021.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Nutriscore2021Data.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Nutriscore2023.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Nutriscore2023Data.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Nutriscore2023DataComponents.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/NutriscoreComponent.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Nutriscores.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/OcrOnProductResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/PackagingComponentREAD.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Panel.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/PanelElement.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/PanelGroupElement.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Panels.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/Product.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductAllOfManufacturer.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductAttributeGroup.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductAttributeGroups.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductBase.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoScore.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreAdjustments.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreAdjustmentsOriginsOfIngredients.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreAdjustmentsPackaging.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreAdjustmentsProductionSystem.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreAdjustmentsThreatenedSpecies.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreDataAgribalyse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreDataMissing.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductEcoscoreDataPreviousData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductExtended.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductExtendedCategoriesProperties.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductExtendedOwnerFields.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductImages.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductImagesProperties.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductIngredients.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductIngredientsIngredientsAnalysis.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductIngredientsPercentMax.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductKnowledgePanels.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductMetaSource.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductMetaSourceFields.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductMetaSourceFieldsOrgGs.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductMetaSourceManufacturer.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductMetadata.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductMisc.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductMiscNutrientLevels.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductNutriscore.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductNutrition.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductNutritionNutriments.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductNutritionNutriscoreData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductQuality.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductSelectedImages.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductSelectedImagesIngredients.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ProductTags.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/RotateAPhotoResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/RotateAPhotoResponseImage.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/SearchForProductsResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/TableColumn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/TableElement.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/TextElement.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/TitleElement.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/UnselectAPhotoResponse.ts
+[main] WARN  o.o.codegen.DefaultCodegen - Could not compute datatypeWithEnum from string, null
+[main] WARN  o.o.codegen.DefaultCodegen - Could not compute datatypeWithEnum from string, null
+[main] WARN  o.o.codegen.DefaultCodegen - Could not compute datatypeWithEnum from string, null
+[main] WARN  o.o.codegen.DefaultCodegen - generated unique operationId `getAttributeGroups_0`
+[main] WARN  o.o.codegen.DefaultCodegen - generated unique operationId `getPreferences_0`
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/apis/AuthenticationApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/AuthenticationApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/apis/AuxiliaryOperationsApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/AuxiliaryOperationsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/apis/PersonalSearchApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/PersonalSearchApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/apis/ReadRequestsApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/ReadRequestsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/apis/WriteRequestsApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/WriteRequestsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/.gitattributes
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/util.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/apis/exception.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/http/http.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/servers.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/configuration.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/auth/auth.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/all.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/types/PromiseAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/types/ObservableAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/types/ObjectParamAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/models/ObjectSerializer.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/middleware.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/apis/baseapi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/index.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/http/isomorphic-fetch.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/package.json
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/tsconfig.json
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/rxjsStub.ts
+[main] INFO  o.o.codegen.TemplateManager - Skipped ./clients/ts/.openapi-generator-ignore (Skipped by supportingFiles options supplied by user.)
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file ./clients/ts/.openapi-generator/FILES
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project 🙏                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################

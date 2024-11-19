@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+            {
+                "type": "node",
+                "request": "launch",
+                "name": "Debug login_and_write.ts",
+                "preLaunchTask": "tsc: build - tsconfig.json",
+                "program": "${workspaceFolder}/dist/__tests__/login_and_write.js",
+                "outFiles": [
+                    "${workspaceFolder}/dist/**/*.js"
+                ],
+                "env": {
+                    "NODE_ENV": "development",
+                    "NODE_EXTRA_CA_CERTS": "/usr/local/share/ca-certificates/extra/cloudflare_for_teams_ECC_Certificate_authority.crt"
+                },
+                "sourceMaps": true
+            }
+    ]
+}

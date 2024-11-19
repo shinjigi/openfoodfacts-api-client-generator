@@ -1,0 +1,16 @@
+{
+  "name": "@iside/ac-open-food-facts-rapidoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'usiamo direttamente la versione online di rapidoc e non il rapidoc-min.js'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rapidoc": "9.3.8"
+  }
+}

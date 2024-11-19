@@ -1,0 +1,14 @@
+{
+    "files.autoSave": "onFocusChange",
+    "mochaExplorer.fullTrace": true,
+    "mochaExplorer.files": "test/**/*.js",
+    "mochaExplorer.require": "@babel/register",
+    "mochaExplorer.timeout": 10000,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.formatOnSave": true,
+}

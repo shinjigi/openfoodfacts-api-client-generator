@@ -1,0 +1,27 @@
+# See https://redocly.com/docs/cli/configuration/
+extends:
+  - ./redocly-common.yaml
+
+apis:
+  off@v2:
+    root: ../../api-external/openfoodfacts/ref/api.yml
+    x-openapi-ts:
+      output: ./docs/redocly/openapi-v2.ts
+    rules:
+      no-ambiguous-paths: error
+      no-invalid-media-type-examples: off
+      no-unused-components: off
+      operation-4xx-response: off
+      #security-defined: off
+      no-server-example.com: off
+  # off@v3:
+  #   root: ../../api-external/openfoodfacts/ref/api-v3.yml
+  #   x-openapi-ts:
+  #     output: ./docs/redocly/openapi-v3.ts
+  #   rules:
+  #     no-ambiguous-paths: error
+  #     no-invalid-media-type-examples: off
+  #     no-unused-components: off
+  #     operation-4xx-response: off
+  #     #security-defined: off
+  #     no-server-example.com: off

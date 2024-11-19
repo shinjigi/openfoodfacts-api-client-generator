@@ -1,0 +1,90 @@
+components:
+  schemas:
+    ImageRole:
+      title: image_role
+      type: object
+      description: |
+        property of an image (or part thereof) selected for a particular role and a particular language.
+      properties:
+        angle:
+          type: integer
+          examples:
+            - 0
+          description: The angle of the image rotation (if it was rotated).
+        coordinates_image_size:
+          type: string
+          examples:
+            - full
+        geometry:
+          type: string
+          examples:
+            - "0x0--1--1"
+        imgid:
+          type: string
+          examples:
+            - "121"
+          description: "The id of the original/source image that was selected to edit(rotate, normalize etc) to produce this new image."
+        normalize:
+          #TODO: should be replaced by something like this once full supported by generator
+          #oneOf:
+          #  - type: "null"
+          #  - type: "boolean"
+          #  - type: "string"
+          #    enum: ["true", "false"]
+          # type: "null" # it raises errors on generator
+          type:
+            - "string"
+            - "boolean"
+            - "null"
+          examples:
+            - null
+            - "false"
+            - "true"
+          description: Normalize colors.
+        rev:
+          type: string
+          examples:
+            - "420"
+        sizes:
+          type: object
+          description: |
+            The available image sizes for the product (both reduced and full). 
+            The reduced images are the ones with numbers as the key( 100, 200 etc)
+            while the full images have `full` as the key.
+          properties:
+            "100":
+              $ref: ./image_size.yaml
+            "200":
+              $ref: ./image_size.yaml
+            "400":
+              $ref: ./image_size.yaml
+            full:
+              $ref: ./image_size.yaml
+        white_magic:
+          # type: 'null' # it raises errors on generator
+          type:
+            - "string"
+            - "boolean"
+            - "null"
+          examples:
+            - null
+            - "false"
+            - "true"
+          description: |
+            Photo on white background : Try to remove the background.
+        x1:
+          type: string
+          examples:
+            - "-1"
+        x2:
+          type: string
+          examples:
+            - "-1"
+        y1:
+          type: string
+          examples:
+            - "-1"
+        y2:
+          type: string
+          examples:
+            - "-1"

@@ -1,0 +1,60 @@
+#TODO: Describe these response fields
+title: add_photo_to_existing_product_response
+type: object
+properties:
+  files:
+    type: array
+    items:
+      type: object
+      properties:
+        url:
+          type: string
+          examples:
+            - /product/3017620422003/nutella-ferrero
+        filename:
+          type: string
+          examples:
+            - ""
+        name:
+          type: string
+          examples:
+            - Nutella - Ferrero - 400g
+        thumbnailUrl:
+          type: string
+          examples:
+            - /images/products/301/762/042/2003/123.100.jpg
+        code:
+          type: string
+          examples:
+            - "3017620422003"
+  image:
+    type: object
+    properties:
+      thumb_url:
+        type: string
+        examples:
+          - 123.100.jpg
+      imgid:
+        type: integer
+        examples:
+          - 123
+      crop_url:
+        type: string
+        examples:
+          - 123.400.jpg
+  imgid:
+    type: integer
+    examples:
+      - 123
+  status:
+    type: string
+    examples:
+      - status ok
+  imagefield:
+    type: string
+    examples:
+      - front_en
+  code:
+    type: string
+    examples:
+      - "3017620422003"

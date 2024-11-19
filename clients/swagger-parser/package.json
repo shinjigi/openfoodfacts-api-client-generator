@@ -1,0 +1,18 @@
+{
+  "name": "swagger-parser",
+  "version": "1.0.0",
+  "main": "parse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "NON FUNZIONA": "NON FUNZIONA"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@swagger-api/apidom-core": "^1.0.0-alpha.9",
+    "@swagger-api/apidom-parser-adapter-openapi-yaml-3-1": "^0.99.2",
+    "@swagger-api/apidom-reference": "^1.0.0-alpha.9"
+  }
+}
